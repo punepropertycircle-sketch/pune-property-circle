@@ -3,7 +3,7 @@ import "./ProjectAccessModal.css";
 
 
 const PROJECT_ACCESS_SCRIPT_URL =
-  "https://script.google.com/macros/s/AKfycbyFCoV02nymE0bVJvxnY7D8jvZmDRVrizXd-Oh4nLGjAonGWUXsa-rqHytL_j1GL9oAFw/exec";
+  "https://script.google.com/macros/s/AKfycbwxHHyh4ubezn6MXL6hxhQF2rL2M92uNzBD_F_szQHdwd1bAqzV5a4FAvz4RdjWpeF7Nw/exec";
 
 
 /* =========================================
