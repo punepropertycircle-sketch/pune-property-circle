@@ -1,0 +1,692 @@
+/* =========================================
+   PROPERTY CATEGORIES
+========================================= */
+
+.property-categories {
+
+  width: 100%;
+
+  padding: 110px 24px;
+
+  background: #f8f7f3;
+
+  box-sizing: border-box;
+
+}
+
+
+/* =========================================
+   CONTAINER
+========================================= */
+
+.property-categories-container {
+
+  width: 100%;
+
+  max-width: 1280px;
+
+  margin: 0 auto;
+
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.property-categories-header {
+
+  display: flex;
+
+  align-items: flex-end;
+
+  justify-content: space-between;
+
+  gap: 50px;
+
+  margin-bottom: 55px;
+
+}
+
+
+.property-categories-label {
+
+  margin: 0 0 15px;
+
+  color: #b08a35;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  letter-spacing: 3px;
+
+}
+
+
+.property-categories-header h2 {
+
+  max-width: 700px;
+
+  margin: 0;
+
+  color: #10263a;
+
+  font-size: clamp(40px, 5vw, 58px);
+
+  line-height: 1.08;
+
+  font-weight: 600;
+
+  letter-spacing: -2px;
+
+}
+
+
+.property-categories-header h2 span {
+
+  color: #b08a35;
+
+}
+
+
+.property-categories-intro {
+
+  max-width: 590px;
+
+  margin: 20px 0 0;
+
+  color: #687582;
+
+  font-size: 15px;
+
+  line-height: 1.75;
+
+}
+
+
+/* =========================================
+   VIEW ALL
+========================================= */
+
+.property-view-all {
+
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 9px;
+
+  flex-shrink: 0;
+
+  color: #10263a;
+
+  text-decoration: none;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  white-space: nowrap;
+
+  transition: color 0.25s ease;
+
+}
+
+
+.property-view-all span {
+
+  color: #b08a35;
+
+  font-size: 19px;
+
+  transition: transform 0.25s ease;
+
+}
+
+
+.property-view-all:hover {
+
+  color: #b08a35;
+
+}
+
+
+.property-view-all:hover span {
+
+  transform: translateX(5px);
+
+}
+
+
+/* =========================================
+   CATEGORY GRID
+========================================= */
+
+.property-category-grid {
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+  gap: 24px;
+
+}
+
+
+/* =========================================
+   CATEGORY CARD
+========================================= */
+
+.property-category-card {
+
+  position: relative;
+
+  min-height: 470px;
+
+  display: flex;
+
+  align-items: flex-end;
+
+  overflow: hidden;
+
+  padding: 34px;
+
+  box-sizing: border-box;
+
+  border-radius: 14px;
+
+  text-decoration: none;
+
+  background-size: cover;
+
+  background-position: center;
+
+  border: 1px solid #e4e0d7;
+
+  box-shadow:
+    0 10px 30px rgba(10, 32, 55, 0.06);
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+
+}
+
+
+.property-category-card:hover {
+
+  transform: translateY(-7px);
+
+  box-shadow:
+    0 24px 50px rgba(10, 32, 55, 0.14);
+
+}
+
+
+/* =========================================
+   BACKGROUND IMAGES
+========================================= */
+
+.new-property {
+
+  background-image:
+    url("/src/assets/hero-image.jpg");
+
+}
+
+
+.resale-property {
+
+  background-image:
+    url("/src/assets/resale-property.jpg");
+
+}
+
+
+.rental-property {
+
+  background-image:
+    url("/src/assets/rental-property.jpg");
+
+}
+
+
+/* =========================================
+   OVERLAY
+========================================= */
+
+.property-category-overlay {
+
+  position: absolute;
+
+  inset: 0;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(5, 20, 34, 0.10) 10%,
+      rgba(5, 20, 34, 0.42) 48%,
+      rgba(5, 20, 34, 0.94) 100%
+    );
+
+  transition:
+    background 0.35s ease;
+
+}
+
+
+.property-category-card:hover
+.property-category-overlay {
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(5, 20, 34, 0.18) 10%,
+      rgba(5, 20, 34, 0.50) 48%,
+      rgba(5, 20, 34, 0.96) 100%
+    );
+
+}
+
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.property-category-content {
+
+  position: relative;
+
+  z-index: 2;
+
+  width: 100%;
+
+}
+
+
+/* =========================================
+   NUMBER
+========================================= */
+
+.property-category-number {
+
+  margin: 0 0 18px;
+
+  color: #d4af5a;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+}
+
+
+/* =========================================
+   LABEL
+========================================= */
+
+.property-category-label {
+
+  margin: 0 0 10px;
+
+  color: rgba(255, 255, 255, 0.70);
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  letter-spacing: 2.5px;
+
+}
+
+
+/* =========================================
+   TITLE
+========================================= */
+
+.property-category-content h3 {
+
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 32px;
+
+  font-weight: 600;
+
+  line-height: 1.15;
+
+  letter-spacing: -0.8px;
+
+}
+
+
+.property-category-content h3 span {
+
+  color: #d4af5a;
+
+}
+
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.property-category-description {
+
+  max-width: 340px;
+
+  margin: 15px 0 25px;
+
+  color: rgba(255, 255, 255, 0.72);
+
+  font-size: 13px;
+
+  line-height: 1.7;
+
+}
+
+
+/* =========================================
+   BUTTON
+========================================= */
+
+.property-category-button {
+
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  color: #ffffff;
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+}
+
+
+.property-category-button span {
+
+  color: #d4af5a;
+
+  font-size: 18px;
+
+  transition:
+    transform 0.25s ease;
+
+}
+
+
+.property-category-card:hover
+.property-category-button span {
+
+  transform: translateX(6px);
+
+}
+
+
+/* =========================================
+   BOTTOM CTA
+========================================= */
+
+.property-category-bottom {
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 12px;
+
+  margin-top: 45px;
+
+}
+
+
+.property-category-bottom p {
+
+  margin: 0;
+
+  color: #687582;
+
+  font-size: 13px;
+
+}
+
+
+.property-category-bottom a {
+
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 7px;
+
+  color: #10263a;
+
+  text-decoration: none;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+}
+
+
+.property-category-bottom a span {
+
+  color: #b08a35;
+
+  font-size: 17px;
+
+  transition:
+    transform 0.25s ease;
+
+}
+
+
+.property-category-bottom a:hover {
+
+  color: #b08a35;
+
+}
+
+
+.property-category-bottom a:hover span {
+
+  transform: translateX(4px);
+
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1000px) {
+
+  .property-categories {
+
+    padding: 90px 25px;
+
+  }
+
+
+  .property-category-grid {
+
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+
+  }
+
+
+  .rental-property {
+
+    grid-column: span 2;
+
+  }
+
+
+  .property-category-card {
+
+    min-height: 430px;
+
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 650px) {
+
+  .property-categories {
+
+    padding: 75px 18px;
+
+  }
+
+
+  .property-categories-header {
+
+    display: block;
+
+    margin-bottom: 38px;
+
+  }
+
+
+  .property-categories-label {
+
+    margin-bottom: 12px;
+
+    font-size: 10px;
+
+    letter-spacing: 2.5px;
+
+  }
+
+
+  .property-categories-header h2 {
+
+    font-size: 39px;
+
+    letter-spacing: -1px;
+
+  }
+
+
+  .property-categories-intro {
+
+    margin-top: 17px;
+
+    font-size: 14px;
+
+  }
+
+
+  .property-view-all {
+
+    display: none;
+
+  }
+
+
+  .property-category-grid {
+
+    grid-template-columns: 1fr;
+
+    gap: 18px;
+
+  }
+
+
+  .rental-property {
+
+    grid-column: auto;
+
+  }
+
+
+  .property-category-card {
+
+    min-height: 400px;
+
+    padding: 27px;
+
+  }
+
+
+  .property-category-content h3 {
+
+    font-size: 29px;
+
+  }
+
+
+  .property-category-description {
+
+    font-size: 13px;
+
+  }
+
+
+  .property-category-bottom {
+
+    flex-direction: column;
+
+    gap: 8px;
+
+    margin-top: 32px;
+
+  }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 400px) {
+
+  .property-categories {
+
+    padding: 65px 15px;
+
+  }
+
+
+  .property-categories-header h2 {
+
+    font-size: 35px;
+
+  }
+
+
+  .property-category-card {
+
+    min-height: 370px;
+
+    padding: 23px;
+
+  }
+
+
+  .property-category-content h3 {
+
+    font-size: 27px;
+
+  }
+
+}

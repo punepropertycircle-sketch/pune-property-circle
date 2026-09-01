@@ -1,0 +1,716 @@
+/* =========================================
+   ABOUT PAGE
+========================================= */
+
+.about-page {
+  width: 100%;
+  min-height: 100vh;
+
+  background: #ffffff;
+
+  color: #10263a;
+}
+
+
+/* =========================================
+   COMMON LABEL
+========================================= */
+
+.about-page-label {
+  margin: 0;
+
+  color: #b08a35;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  letter-spacing: 3px;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.about-page-hero {
+  position: relative;
+
+  width: 100%;
+  min-height: 60vh;
+
+  display: flex;
+  align-items: center;
+
+  overflow: hidden;
+
+  background:
+    linear-gradient(
+      110deg,
+      #10263a 0%,
+      #10263a 58%,
+      #17364f 100%
+    );
+}
+
+.about-page-hero::after {
+  content: "";
+
+  position: absolute;
+
+  width: 520px;
+  height: 520px;
+
+  right: -170px;
+  bottom: -260px;
+
+  border: 1px solid rgba(212, 175, 90, 0.25);
+
+  border-radius: 50%;
+}
+
+.about-page-hero::before {
+  content: "";
+
+  position: absolute;
+
+  width: 350px;
+  height: 350px;
+
+  right: 80px;
+  bottom: -220px;
+
+  border: 1px solid rgba(212, 175, 90, 0.12);
+
+  border-radius: 50%;
+}
+
+.about-page-hero-content {
+  position: relative;
+
+  z-index: 2;
+
+  width: 100%;
+  max-width: 1280px;
+
+  margin: 0 auto;
+
+  padding: 145px 50px 100px;
+
+  box-sizing: border-box;
+}
+
+.about-page-hero-content .about-page-label {
+  margin-bottom: 20px;
+}
+
+.about-page-hero h1 {
+  max-width: 900px;
+
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: clamp(48px, 7vw, 82px);
+
+  line-height: 1.05;
+
+  font-weight: 600;
+
+  letter-spacing: -2.5px;
+}
+
+.about-page-hero h1 span {
+  color: #d4af5a;
+}
+
+.about-page-subtitle {
+  max-width: 620px;
+
+  margin: 25px 0 0;
+
+  color: rgba(255, 255, 255, 0.72);
+
+  font-size: 16px;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================
+   WHO WE ARE
+========================================= */
+
+.about-story {
+  width: 100%;
+
+  padding: 90px 24px;
+
+  background: #ffffff;
+
+  box-sizing: border-box;
+}
+
+.about-story-container {
+  width: 100%;
+  max-width: 1180px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns: 0.35fr 1fr;
+
+  gap: 75px;
+
+  align-items: start;
+}
+
+
+/* =========================================
+   STORY SIDE
+========================================= */
+
+.about-story-side {
+  padding-top: 8px;
+
+  min-height: 330px;
+
+  display: flex;
+
+  flex-direction: column;
+}
+
+.about-story-side .about-page-label {
+  margin-bottom: 24px;
+}
+
+.about-story-line {
+  width: 45px;
+
+  height: 1px;
+
+  margin-bottom: 22px;
+
+  background: #d4af5a;
+}
+
+.about-story-side span {
+  color: #9aa1a6;
+
+  font-size: 10px;
+
+  font-weight: 600;
+
+  letter-spacing: 2px;
+
+  line-height: 1.8;
+}
+
+
+/* =========================================
+   STORY CONTENT
+========================================= */
+
+.about-story-content {
+  max-width: 790px;
+}
+
+.about-story-content h2 {
+  max-width: 800px;
+
+  margin: 0;
+
+  color: #10263a;
+
+  font-size: clamp(40px, 5vw, 57px);
+
+  line-height: 1.08;
+
+  font-weight: 600;
+
+  letter-spacing: -2px;
+}
+
+.about-story-content h2 span {
+  color: #b08a35;
+}
+
+.about-story-content p {
+  max-width: 720px;
+
+  margin: 19px 0 0;
+
+  color: #687582;
+
+  font-size: 15px;
+
+  line-height: 1.75;
+}
+
+.about-story-content .about-story-main-text {
+  margin-top: 25px;
+}
+
+
+/* =========================================
+   STORY HIGHLIGHTS
+========================================= */
+
+.about-story-highlights {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 0;
+
+  margin-top: 42px;
+
+  border-top: 1px solid #e8e5dd;
+
+  border-bottom: 1px solid #e8e5dd;
+}
+
+.about-highlight {
+  min-height: 105px;
+
+  padding: 20px 20px 20px 0;
+
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 15px;
+
+  box-sizing: border-box;
+}
+
+.about-highlight + .about-highlight {
+  padding-left: 20px;
+
+  border-left: 1px solid #e8e5dd;
+}
+
+.about-highlight-number {
+  color: #b08a35;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  letter-spacing: 1px;
+}
+
+.about-highlight h3 {
+  margin: 0 0 6px;
+
+  color: #10263a;
+
+  font-size: 14px;
+
+  font-weight: 600;
+}
+
+.about-highlight p {
+  margin: 0;
+
+  color: #7a858e;
+
+  font-size: 11px;
+
+  line-height: 1.5;
+}
+
+
+/* =========================================
+   VALUES
+========================================= */
+
+.about-values {
+  width: 100%;
+
+  padding: 95px 24px;
+
+  background: #f8f7f3;
+
+  box-sizing: border-box;
+}
+
+.about-values-container {
+  width: 100%;
+  max-width: 1180px;
+
+  margin: 0 auto;
+}
+
+.about-values-heading {
+  max-width: 700px;
+
+  margin-bottom: 48px;
+}
+
+.about-values-heading .about-page-label {
+  margin-bottom: 14px;
+}
+
+.about-values-heading h2 {
+  margin: 0;
+
+  color: #10263a;
+
+  font-size: clamp(40px, 5vw, 55px);
+
+  line-height: 1.1;
+
+  font-weight: 600;
+
+  letter-spacing: -1.5px;
+}
+
+.about-values-heading h2 span {
+  color: #b08a35;
+}
+
+
+/* =========================================
+   VALUE GRID
+========================================= */
+
+.about-values-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 20px;
+}
+
+.about-value-card {
+  min-height: 280px;
+
+  padding: 30px;
+
+  background: #ffffff;
+
+  border: 1px solid #e7e4dc;
+
+  border-radius: 12px;
+
+  box-sizing: border-box;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.about-value-card:hover {
+  transform: translateY(-6px);
+
+  box-shadow:
+    0 18px 40px rgba(10, 32, 55, 0.08);
+}
+
+.about-value-number {
+  color: #b08a35;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+}
+
+.about-value-line {
+  width: 35px;
+
+  height: 1px;
+
+  margin: 22px 0 27px;
+
+  background: #d4af5a;
+}
+
+.about-value-card h3 {
+  margin: 0;
+
+  color: #10263a;
+
+  font-size: 21px;
+
+  font-weight: 600;
+}
+
+.about-value-card p {
+  max-width: 300px;
+
+  margin: 15px 0 0;
+
+  color: #687582;
+
+  font-size: 14px;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================
+   CTA
+========================================= */
+
+.about-cta {
+  width: 100%;
+
+  padding: 100px 24px;
+
+  background: #10263a;
+
+  text-align: center;
+
+  box-sizing: border-box;
+}
+
+.about-cta-content {
+  max-width: 750px;
+
+  margin: 0 auto;
+}
+
+.about-cta-label {
+  margin: 0 0 15px;
+
+  color: #d4af5a;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  letter-spacing: 3px;
+}
+
+.about-cta h2 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: clamp(40px, 5vw, 58px);
+
+  line-height: 1.1;
+
+  font-weight: 600;
+
+  letter-spacing: -1.5px;
+}
+
+.about-cta h2 span {
+  color: #d4af5a;
+}
+
+.about-cta-description {
+  max-width: 550px;
+
+  margin: 18px auto 28px;
+
+  color: rgba(255, 255, 255, 0.68);
+
+  font-size: 15px;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================
+   CTA BUTTON
+========================================= */
+
+.about-cta-button {
+  min-height: 50px;
+
+  padding: 0 23px;
+
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  color: #10263a;
+
+  background: #d4af5a;
+
+  border: 1px solid #d4af5a;
+
+  border-radius: 8px;
+
+  text-decoration: none;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  transition:
+    background 0.25s ease,
+    transform 0.25s ease;
+}
+
+.about-cta-button span {
+  font-size: 18px;
+
+  transition:
+    transform 0.25s ease;
+}
+
+.about-cta-button:hover {
+  background: #e2c477;
+
+  border-color: #e2c477;
+
+  transform: translateY(-2px);
+}
+
+.about-cta-button:hover span {
+  transform: translateX(5px);
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+  .about-page-hero-content {
+    padding: 125px 35px 90px;
+  }
+
+  .about-story-container {
+    grid-template-columns: 1fr;
+
+    gap: 30px;
+  }
+
+  .about-story-side {
+    min-height: auto;
+  }
+
+  .about-values-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .about-page-hero {
+    min-height: 65vh;
+  }
+
+  .about-page-hero-content {
+    padding: 125px 22px 75px;
+  }
+
+  .about-page-hero h1 {
+    font-size: 43px;
+
+    letter-spacing: -1px;
+  }
+
+  .about-page-subtitle {
+    font-size: 14px;
+  }
+
+
+  .about-story {
+    padding: 65px 20px;
+  }
+
+  .about-story-container {
+    gap: 25px;
+  }
+
+  .about-story-content h2 {
+    font-size: 39px;
+
+    letter-spacing: -1px;
+  }
+
+  .about-story-content p {
+    font-size: 14px;
+  }
+
+
+  .about-story-highlights {
+    grid-template-columns: 1fr;
+
+    margin-top: 35px;
+  }
+
+  .about-highlight {
+    min-height: auto;
+
+    padding: 17px 0;
+  }
+
+  .about-highlight + .about-highlight {
+    padding-left: 0;
+
+    border-left: none;
+
+    border-top: 1px solid #e8e5dd;
+  }
+
+
+  .about-values {
+    padding: 70px 20px;
+  }
+
+  .about-values-heading {
+    margin-bottom: 35px;
+  }
+
+  .about-values-heading h2 {
+    font-size: 39px;
+  }
+
+  .about-value-card {
+    min-height: auto;
+
+    padding: 25px;
+  }
+
+
+  .about-cta {
+    padding: 75px 20px;
+  }
+
+  .about-cta h2 {
+    font-size: 39px;
+  }
+
+  .about-cta-button {
+    width: 100%;
+
+    box-sizing: border-box;
+  }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 400px) {
+
+  .about-page-hero h1,
+  .about-story-content h2,
+  .about-values-heading h2,
+  .about-cta h2 {
+    font-size: 35px;
+  }
+
+}

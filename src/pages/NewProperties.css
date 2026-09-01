@@ -1,0 +1,528 @@
+/* =========================================
+   NEW PROPERTIES PAGE
+========================================= */
+
+.new-properties-page {
+  width: 100%;
+  min-height: 100vh;
+
+  background: #ffffff;
+
+  color: #10263a;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.new-properties-hero {
+  min-height: 52vh;
+
+  display: flex;
+  align-items: center;
+
+  padding: 145px 24px 80px;
+
+  box-sizing: border-box;
+
+  background:
+    linear-gradient(
+      135deg,
+      #0a2037,
+      #153952
+    );
+}
+
+
+.new-properties-hero-content {
+  width: 100%;
+  max-width: 1100px;
+
+  margin: 0 auto;
+}
+
+
+.new-properties-label {
+  margin: 0 0 15px;
+
+  color: #d4af5a;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  letter-spacing: 3px;
+
+  text-transform: uppercase;
+}
+
+
+.new-properties-hero h1 {
+  max-width: 800px;
+
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: clamp(
+    45px,
+    6vw,
+    70px
+  );
+
+  line-height: 1.05;
+
+  font-weight: 600;
+
+  letter-spacing: -2px;
+}
+
+
+.new-properties-hero h1 span {
+  color: #d4af5a;
+}
+
+
+.new-properties-hero-content > p:last-child {
+  max-width: 600px;
+
+  margin-top: 24px;
+
+  color:
+    rgba(255, 255, 255, 0.72);
+
+  font-size: 16px;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================
+   PROPERTY LIST
+========================================= */
+
+.new-properties-list {
+  width: 100%;
+
+  padding: 100px 24px;
+
+  box-sizing: border-box;
+}
+
+
+.new-properties-heading {
+  width: 100%;
+  max-width: 1200px;
+
+  margin: 0 auto 50px;
+}
+
+
+.new-properties-heading h2 {
+  margin: 0;
+
+  color: #10263a;
+
+  font-size: clamp(
+    38px,
+    4.5vw,
+    55px
+  );
+
+  line-height: 1.1;
+
+  font-weight: 600;
+
+  letter-spacing: -1.5px;
+}
+
+
+.new-properties-heading h2 span {
+  color: #b08a35;
+}
+
+
+/* =========================================
+   GRID
+========================================= */
+
+.new-properties-grid {
+  width: 100%;
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 30px;
+}
+
+
+/* =========================================
+   CARD
+========================================= */
+
+.new-property-card {
+  overflow: hidden;
+
+  background: #ffffff;
+
+  border: 1px solid #e6e3dc;
+
+  border-radius: 14px;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+
+.new-property-card:hover {
+  transform: translateY(-5px);
+
+  border-color: #d4af5a;
+
+  box-shadow:
+    0 18px 45px
+    rgba(16, 38, 58, 0.10);
+}
+
+
+/* =========================================
+   IMAGE
+========================================= */
+
+.new-property-image {
+  position: relative;
+
+  width: 100%;
+
+  aspect-ratio: 16 / 10;
+
+  overflow: hidden;
+
+  background: #eeeeeb;
+}
+
+
+.new-property-image img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  transition:
+    transform 0.5s ease;
+}
+
+
+.new-property-card:hover
+.new-property-image img {
+  transform: scale(1.04);
+}
+
+
+/* =========================================
+   STATUS
+========================================= */
+
+.new-property-status {
+  position: absolute;
+
+  top: 18px;
+  left: 18px;
+
+  padding: 7px 11px;
+
+  color: #ffffff;
+
+  background:
+    rgba(16, 38, 58, 0.88);
+
+  border:
+    1px solid
+    rgba(255, 255, 255, 0.15);
+
+  border-radius: 5px;
+
+  font-size: 10px;
+  font-weight: 700;
+
+  letter-spacing: 1.2px;
+
+  text-transform: uppercase;
+}
+
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.new-property-content {
+  padding: 28px;
+}
+
+
+.new-property-type {
+  margin: 0 0 9px;
+
+  color: #b08a35;
+
+  font-size: 10px;
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+  text-transform: uppercase;
+}
+
+
+.new-property-content h3 {
+  margin: 0;
+
+  color: #10263a;
+
+  font-size: 26px;
+
+  line-height: 1.2;
+
+  font-weight: 600;
+}
+
+
+.new-property-location {
+  margin: 10px 0 0;
+
+  color: #687582;
+
+  font-size: 13px;
+
+  line-height: 1.5;
+}
+
+
+.new-property-description {
+  max-width: 500px;
+
+  margin: 15px 0 0;
+
+  color: #687582;
+
+  font-size: 14px;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================
+   BUTTON
+========================================= */
+
+.new-property-content button {
+  min-height: 46px;
+
+  margin-top: 22px;
+
+  padding: 0 18px;
+
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 9px;
+
+  color: #ffffff;
+
+  background: #10263a;
+
+  border: 1px solid #10263a;
+
+  border-radius: 7px;
+
+  cursor: pointer;
+
+  font-family: inherit;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  transition:
+    color 0.25s ease,
+    background 0.25s ease,
+    border-color 0.25s ease,
+    transform 0.25s ease;
+}
+
+
+.new-property-content button span {
+  font-size: 17px;
+
+  transition:
+    transform 0.25s ease;
+}
+
+
+.new-property-content button:hover {
+  color: #10263a;
+
+  background: #d4af5a;
+
+  border-color: #d4af5a;
+
+  transform: translateY(-2px);
+}
+
+
+.new-property-content button:hover span {
+  transform: translateX(4px);
+}
+
+
+/* =========================================
+   NO PROJECT
+========================================= */
+
+.no-new-properties {
+  grid-column: 1 / -1;
+
+  padding: 70px 30px;
+
+  text-align: center;
+
+  background: #f7f6f2;
+
+  border:
+    1px solid #e6e3dc;
+
+  border-radius: 12px;
+}
+
+
+.no-new-properties h3 {
+  margin: 0;
+
+  color: #10263a;
+
+  font-size: 24px;
+}
+
+
+.no-new-properties p {
+  margin: 12px 0 0;
+
+  color: #687582;
+
+  font-size: 14px;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+  .new-properties-grid {
+    grid-template-columns: 1fr;
+
+    max-width: 700px;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .new-properties-hero {
+    min-height: 52vh;
+
+    padding:
+      130px
+      22px
+      75px;
+  }
+
+
+  .new-properties-hero h1 {
+    font-size: 43px;
+
+    letter-spacing: -1px;
+  }
+
+
+  .new-properties-hero-content > p:last-child {
+    font-size: 14px;
+  }
+
+
+  .new-properties-list {
+    padding:
+      70px
+      20px;
+  }
+
+
+  .new-properties-heading {
+    margin-bottom: 38px;
+  }
+
+
+  .new-properties-heading h2 {
+    font-size: 39px;
+  }
+
+
+  .new-property-content {
+    padding: 24px 21px 25px;
+  }
+
+
+  .new-property-content h3 {
+    font-size: 24px;
+  }
+
+
+  .new-property-description {
+    font-size: 13px;
+  }
+
+
+  .new-property-content button {
+    width: 100%;
+
+    min-height: 48px;
+  }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 380px) {
+
+  .new-properties-hero {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+
+  .new-properties-list {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+}
