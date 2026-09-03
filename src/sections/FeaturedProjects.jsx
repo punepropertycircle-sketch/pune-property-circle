@@ -3,7 +3,10 @@ import "./FeaturedProjects.css";
 
 function FeaturedProjects() {
   return (
-    <section className="property-categories" id="projects">
+    <section
+      className="property-categories"
+      id="projects"
+    >
 
       <div className="property-categories-container">
 
@@ -25,8 +28,8 @@ function FeaturedProjects() {
             </h2>
 
             <p className="property-categories-intro">
-              Explore new properties, resale homes and rental
-              opportunities across Pune.
+              Explore new properties, resale homes,
+              rental opportunities and plots across Pune.
             </p>
 
           </div>
@@ -44,7 +47,7 @@ function FeaturedProjects() {
 
 
         {/* =================================
-            THREE PROPERTY CATEGORIES
+            FOUR PROPERTY CATEGORIES
         ================================= */}
 
         <div className="property-category-grid">
@@ -63,9 +66,18 @@ function FeaturedProjects() {
 
             <div className="property-category-content">
 
-              <p className="property-category-number">
-                01
-              </p>
+              <div className="property-category-top">
+
+                <span className="property-category-360">
+                  360° EXPERIENCE
+                </span>
+
+                <p className="property-category-number">
+                  01
+                </p>
+
+              </div>
+
 
               <p className="property-category-label">
                 NEW PROPERTY
@@ -80,11 +92,6 @@ function FeaturedProjects() {
                 Explore newly launched and upcoming
                 properties across Pune.
               </p>
-
-              <div className="property-category-button">
-                Explore New Properties
-                <span>→</span>
-              </div>
 
             </div>
 
@@ -104,9 +111,18 @@ function FeaturedProjects() {
 
             <div className="property-category-content">
 
-              <p className="property-category-number">
-                02
-              </p>
+              <div className="property-category-top">
+
+                <span className="property-category-360">
+                  360° EXPERIENCE
+                </span>
+
+                <p className="property-category-number">
+                  02
+                </p>
+
+              </div>
+
 
               <p className="property-category-label">
                 RESALE PROPERTY
@@ -121,11 +137,6 @@ function FeaturedProjects() {
                 Discover carefully selected resale
                 properties available across Pune.
               </p>
-
-              <div className="property-category-button">
-                Explore Resale Properties
-                <span>→</span>
-              </div>
 
             </div>
 
@@ -145,9 +156,18 @@ function FeaturedProjects() {
 
             <div className="property-category-content">
 
-              <p className="property-category-number">
-                03
-              </p>
+              <div className="property-category-top">
+
+                <span className="property-category-360">
+                  360° EXPERIENCE
+                </span>
+
+                <p className="property-category-number">
+                  03
+                </p>
+
+              </div>
+
 
               <p className="property-category-label">
                 RENTAL PROPERTY
@@ -163,14 +183,55 @@ function FeaturedProjects() {
                 in convenient locations across Pune.
               </p>
 
-              <div className="property-category-button">
-                Explore Rental Properties
-                <span>→</span>
+            </div>
+
+          </Link>
+
+
+          {/* =================================
+              PLOTS PROPERTY
+          ================================= */}
+
+          <Link
+            to="/projects/plots"
+            className="property-category-card plots-property"
+          >
+
+            <div className="property-category-overlay"></div>
+
+            <div className="property-category-content">
+
+              <div className="property-category-top">
+
+                <span className="property-category-360">
+                  360° EXPERIENCE
+                </span>
+
+                <p className="property-category-number">
+                  04
+                </p>
+
               </div>
+
+
+              <p className="property-category-label">
+                PLOTS PROPERTY
+              </p>
+
+              <h3>
+                Plots
+                <span> Properties.</span>
+              </h3>
+
+              <p className="property-category-description">
+                Explore residential plots and land
+                opportunities available across Pune.
+              </p>
 
             </div>
 
           </Link>
+
 
         </div>
 

@@ -109,11 +109,11 @@ function Footer() {
           </span>
 
           <span>
-            Your Phone Number
+            8380800500
           </span>
 
           <span>
-            Your Email Address
+            punepropertycircle@gmail.com
           </span>
 
         </div>

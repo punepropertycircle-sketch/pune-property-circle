@@ -1,61 +1,20 @@
 import { useNavigate } from "react-router-dom";
-
 import "./Projects.css";
 
-
 function Projects() {
-
   const navigate = useNavigate();
 
-
-  /* =================================
-      CATEGORY NAVIGATION
-  ================================= */
-
   const handleCategoryClick = (category) => {
-
     navigate(`/projects/${category}`);
-
   };
 
-
   return (
-
     <main className="projects-page">
 
-
-      {/* =================================
-          HERO
-      ================================= */}
-
-      <section className="projects-page-hero">
-
-        <div className="projects-page-hero-content">
-
-          <p className="projects-page-label">
-            PUNE PROPERTY CIRCLE
-          </p>
-
-          <h1>
-            Explore Our
-            <span> Properties.</span>
-          </h1>
-
-          <p>
-            Discover properties across Pune
-            for every requirement.
-          </p>
-
-        </div>
-
-      </section>
+      
 
 
-
-      {/* =================================
-          PROPERTY CATEGORIES
-      ================================= */}
-
+      {/* PROPERTY CATEGORIES */}
       <section className="property-categories">
 
         <div className="property-categories-heading">
@@ -72,26 +31,26 @@ function Projects() {
         </div>
 
 
-
         <div className="property-categories-grid">
 
-
-          {/* =================================
-              NEW PROPERTY
-          ================================= */}
-
+          {/* NEW PROPERTY */}
           <article
             className="property-category-card"
             onClick={() => handleCategoryClick("new")}
           >
+            <div className="property-category-top">
 
-            <div className="property-category-number">
-              01
+              <span className="property-category-360">
+                360° EXPERIENCE
+              </span>
+
+              <div className="property-category-number">
+                01
+              </div>
+
             </div>
 
-
             <div className="property-category-content">
-
 
               <h3>
                 New
@@ -104,48 +63,29 @@ function Projects() {
               </p>
 
 
-              <button
-                type="button"
-                onClick={(e) => {
-
-                  e.stopPropagation();
-
-                  handleCategoryClick("new");
-
-                }}
-              >
-
-                Explore Properties
-
-                <span>
-                  →
-                </span>
-
-              </button>
 
             </div>
-
           </article>
 
 
-
-          {/* =================================
-              RESELL PROPERTY
-          ================================= */}
-
+          {/* RESELL PROPERTY */}
           <article
             className="property-category-card"
             onClick={() => handleCategoryClick("resale")}
           >
+            <div className="property-category-top">
 
-            <div className="property-category-number">
-              02
+              <span className="property-category-360">
+                360° EXPERIENCE
+              </span>
+
+              <div className="property-category-number">
+                02
+              </div>
+
             </div>
 
-
             <div className="property-category-content">
-
-            
 
               <h3>
                 Resell
@@ -158,48 +98,29 @@ function Projects() {
               </p>
 
 
-              <button
-                type="button"
-                onClick={(e) => {
-
-                  e.stopPropagation();
-
-                  handleCategoryClick("resale");
-
-                }}
-              >
-
-                Explore Properties
-
-                <span>
-                  →
-                </span>
-
-              </button>
 
             </div>
-
           </article>
 
 
-
-          {/* =================================
-              RENTAL PROPERTY
-          ================================= */}
-
+          {/* RENTAL PROPERTY */}
           <article
             className="property-category-card"
             onClick={() => handleCategoryClick("rental")}
           >
+            <div className="property-category-top">
 
-            <div className="property-category-number">
-              03
+              <span className="property-category-360">
+                360° EXPERIENCE
+              </span>
+
+              <div className="property-category-number">
+                03
+              </div>
+
             </div>
 
-
             <div className="property-category-content">
-
-              
 
               <h3>
                 Rental
@@ -212,40 +133,51 @@ function Projects() {
               </p>
 
 
-              <button
-                type="button"
-                onClick={(e) => {
 
-                  e.stopPropagation();
+            </div>
+          </article>
 
-                  handleCategoryClick("rental");
 
-                }}
-              >
+          {/* PLOTS PROPERTY */}
+          <article
+            className="property-category-card"
+            onClick={() => handleCategoryClick("plots")}
+          >
+            <div className="property-category-top">
 
-                Explore Properties
+              <span className="property-category-360">
+                360° EXPERIENCE
+              </span>
 
-                <span>
-                  →
-                </span>
-
-              </button>
+              <div className="property-category-number">
+                04
+              </div>
 
             </div>
 
-          </article>
+            <div className="property-category-content">
 
+              <h3>
+                Plots
+                <span> Properties.</span>
+              </h3>
+
+              <p>
+                Explore residential plots and land
+                opportunities available across Pune.
+              </p>
+
+
+
+            </div>
+          </article>
 
         </div>
 
       </section>
 
-
     </main>
-
   );
-
 }
-
 
 export default Projects;

@@ -5,9 +5,7 @@
 .new-properties-page {
   width: 100%;
   min-height: 100vh;
-
   background: #ffffff;
-
   color: #10263a;
 }
 
@@ -34,14 +32,12 @@
     );
 }
 
-
 .new-properties-hero-content {
   width: 100%;
   max-width: 1100px;
 
   margin: 0 auto;
 }
-
 
 .new-properties-label {
   margin: 0 0 15px;
@@ -52,10 +48,8 @@
   font-weight: 700;
 
   letter-spacing: 3px;
-
   text-transform: uppercase;
 }
-
 
 .new-properties-hero h1 {
   max-width: 800px;
@@ -77,11 +71,9 @@
   letter-spacing: -2px;
 }
 
-
 .new-properties-hero h1 span {
   color: #d4af5a;
 }
-
 
 .new-properties-hero-content > p:last-child {
   max-width: 600px;
@@ -109,14 +101,13 @@
   box-sizing: border-box;
 }
 
-
 .new-properties-heading {
   width: 100%;
+
   max-width: 1200px;
 
   margin: 0 auto 50px;
 }
-
 
 .new-properties-heading h2 {
   margin: 0;
@@ -136,7 +127,6 @@
   letter-spacing: -1.5px;
 }
 
-
 .new-properties-heading h2 span {
   color: #b08a35;
 }
@@ -148,6 +138,7 @@
 
 .new-properties-grid {
   width: 100%;
+
   max-width: 1200px;
 
   margin: 0 auto;
@@ -170,7 +161,8 @@
 
   background: #ffffff;
 
-  border: 1px solid #e6e3dc;
+  border:
+    1px solid #e6e3dc;
 
   border-radius: 14px;
 
@@ -179,7 +171,6 @@
     box-shadow 0.3s ease,
     border-color 0.3s ease;
 }
-
 
 .new-property-card:hover {
   transform: translateY(-5px);
@@ -208,7 +199,6 @@
   background: #eeeeeb;
 }
 
-
 .new-property-image img {
   width: 100%;
   height: 100%;
@@ -221,7 +211,6 @@
     transform 0.5s ease;
 }
 
-
 .new-property-card:hover
 .new-property-image img {
   transform: scale(1.04);
@@ -229,7 +218,7 @@
 
 
 /* =========================================
-   STATUS
+   360 VIEW BADGE
 ========================================= */
 
 .new-property-status {
@@ -238,7 +227,8 @@
   top: 18px;
   left: 18px;
 
-  padding: 7px 11px;
+  padding:
+    7px 11px;
 
   color: #ffffff;
 
@@ -252,6 +242,7 @@
   border-radius: 5px;
 
   font-size: 10px;
+
   font-weight: 700;
 
   letter-spacing: 1.2px;
@@ -261,13 +252,70 @@
 
 
 /* =========================================
+   360 VIEW CLICKABLE BUTTON
+========================================= */
+
+.new-property-360 {
+  cursor: pointer;
+
+  font-family: inherit;
+
+  appearance: none;
+  -webkit-appearance: none;
+
+  outline: none;
+
+  transition:
+    background 0.25s ease,
+    border-color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.new-property-360:hover {
+  background: #d4af5a;
+
+  border-color: #d4af5a;
+
+  color: #10263a;
+
+  transform:
+    translateY(-2px);
+}
+
+.new-property-360:active {
+  transform:
+    translateY(0);
+}
+
+
+/* =========================================
    CONTENT
 ========================================= */
 
 .new-property-content {
+  position: relative;
+
+  min-height: 250px;
+
   padding: 28px;
+
+  overflow: hidden;
+
+  box-sizing: border-box;
 }
 
+
+/* =========================================
+   PROPERTY INFORMATION
+========================================= */
+
+.new-property-info {
+  position: relative;
+
+  z-index: 5;
+
+  width: 60%;
+}
 
 .new-property-type {
   margin: 0 0 9px;
@@ -275,13 +323,13 @@
   color: #b08a35;
 
   font-size: 10px;
+
   font-weight: 700;
 
   letter-spacing: 2px;
 
   text-transform: uppercase;
 }
-
 
 .new-property-content h3 {
   margin: 0;
@@ -295,7 +343,6 @@
   font-weight: 600;
 }
 
-
 .new-property-location {
   margin: 10px 0 0;
 
@@ -305,7 +352,6 @@
 
   line-height: 1.5;
 }
-
 
 .new-property-description {
   max-width: 500px;
@@ -321,7 +367,7 @@
 
 
 /* =========================================
-   BUTTON
+   EXPLORE 360 VIEW BUTTON
 ========================================= */
 
 .new-property-content button {
@@ -329,11 +375,13 @@
 
   margin-top: 22px;
 
-  padding: 0 18px;
+  padding:
+    0 18px;
 
   display: inline-flex;
 
   align-items: center;
+
   justify-content: center;
 
   gap: 9px;
@@ -342,7 +390,8 @@
 
   background: #10263a;
 
-  border: 1px solid #10263a;
+  border:
+    1px solid #10263a;
 
   border-radius: 7px;
 
@@ -361,14 +410,12 @@
     transform 0.25s ease;
 }
 
-
 .new-property-content button span {
   font-size: 17px;
 
   transition:
     transform 0.25s ease;
 }
-
 
 .new-property-content button:hover {
   color: #10263a;
@@ -377,12 +424,274 @@
 
   border-color: #d4af5a;
 
-  transform: translateY(-2px);
+  transform:
+    translateY(-2px);
+}
+
+.new-property-content button:hover span {
+  transform:
+    translateX(4px);
 }
 
 
-.new-property-content button:hover span {
-  transform: translateX(4px);
+/* =========================================
+   ROTATING GLOBE
+========================================= */
+
+.property-globe {
+  position: absolute;
+
+  right: 35px;
+  bottom: 18px;
+
+  width: 190px;
+  height: 190px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  pointer-events: none;
+
+  z-index: 2;
+}
+
+
+/* =========================================
+   MAIN GLOBE
+========================================= */
+
+.globe {
+  position: relative;
+
+  width: 105px;
+  height: 105px;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle at 35% 28%,
+      #fff8df 0%,
+      #efd28a 18%,
+      #d3a94f 42%,
+      #ad7e27 68%,
+      #795214 100%
+    );
+
+  box-shadow:
+    0 8px 25px
+    rgba(160, 112, 30, 0.25),
+
+    inset -16px -16px 24px
+    rgba(75, 45, 5, 0.28),
+
+    inset 10px 8px 18px
+    rgba(255, 255, 255, 0.40);
+
+  overflow: hidden;
+
+  animation:
+    globeRotate 8s linear infinite;
+}
+
+
+/* =========================================
+   GLOBE HORIZONTAL LINE
+========================================= */
+
+.globe-line-horizontal {
+  position: absolute;
+
+  width: 100%;
+  height: 40px;
+
+  left: 0;
+  top: 32px;
+
+  border:
+    1px solid
+    rgba(255, 248, 220, 0.48);
+
+  border-radius: 50%;
+}
+
+
+/* =========================================
+   GLOBE VERTICAL LINES
+========================================= */
+
+.globe-line-vertical-one {
+  position: absolute;
+
+  width: 48px;
+  height: 100%;
+
+  left: 28px;
+  top: 0;
+
+  border-left:
+    1px solid
+    rgba(255, 248, 220, 0.48);
+
+  border-right:
+    1px solid
+    rgba(255, 248, 220, 0.48);
+
+  border-radius: 50%;
+}
+
+.globe-line-vertical-two {
+  position: absolute;
+
+  width: 22px;
+  height: 100%;
+
+  left: 41px;
+  top: 0;
+
+  border-left:
+    1px solid
+    rgba(255, 248, 220, 0.35);
+
+  border-right:
+    1px solid
+    rgba(255, 248, 220, 0.35);
+
+  border-radius: 50%;
+}
+
+
+/* =========================================
+   ORBIT RINGS
+========================================= */
+
+.globe-orbit {
+  position: absolute;
+
+  border:
+    1.5px solid
+    rgba(198, 153, 58, 0.55);
+
+  border-radius: 50%;
+
+  transform-style: preserve-3d;
+}
+
+
+/* =========================================
+   ORBIT ONE
+========================================= */
+
+.globe-orbit-one {
+  width: 155px;
+  height: 54px;
+
+  transform:
+    rotate(25deg);
+
+  animation:
+    orbitOne 5s linear infinite;
+}
+
+
+/* =========================================
+   ORBIT TWO
+========================================= */
+
+.globe-orbit-two {
+  width: 165px;
+  height: 62px;
+
+  transform:
+    rotate(-35deg);
+
+  animation:
+    orbitTwo 6s linear infinite;
+}
+
+
+/* =========================================
+   GLOBE GLOW
+========================================= */
+
+.globe-glow {
+  position: absolute;
+
+  width: 90px;
+  height: 18px;
+
+  bottom: 5px;
+  left: 50%;
+
+  transform:
+    translateX(-50%);
+
+  background:
+    rgba(196, 154, 58, 0.22);
+
+  filter:
+    blur(12px);
+
+  border-radius: 50%;
+}
+
+
+/* =========================================
+   GLOBE ANIMATION
+========================================= */
+
+@keyframes globeRotate {
+
+  from {
+    transform:
+      rotateY(0deg);
+  }
+
+  to {
+    transform:
+      rotateY(360deg);
+  }
+
+}
+
+
+/* =========================================
+   ORBIT ANIMATION
+========================================= */
+
+@keyframes orbitOne {
+
+  from {
+    transform:
+      rotate(25deg)
+      rotateZ(0deg);
+  }
+
+  to {
+    transform:
+      rotate(25deg)
+      rotateZ(360deg);
+  }
+
+}
+
+
+@keyframes orbitTwo {
+
+  from {
+    transform:
+      rotate(-35deg)
+      rotateZ(360deg);
+  }
+
+  to {
+    transform:
+      rotate(-35deg)
+      rotateZ(0deg);
+  }
+
 }
 
 
@@ -405,7 +714,6 @@
   border-radius: 12px;
 }
 
-
 .no-new-properties h3 {
   margin: 0;
 
@@ -413,7 +721,6 @@
 
   font-size: 24px;
 }
-
 
 .no-new-properties p {
   margin: 12px 0 0;
@@ -446,63 +753,182 @@
 @media (max-width: 600px) {
 
   .new-properties-hero {
+
     min-height: 52vh;
 
     padding:
       130px
       22px
       75px;
+
   }
 
 
   .new-properties-hero h1 {
+
     font-size: 43px;
 
     letter-spacing: -1px;
+
   }
 
 
   .new-properties-hero-content > p:last-child {
+
     font-size: 14px;
+
   }
 
 
   .new-properties-list {
+
     padding:
       70px
       20px;
+
   }
 
 
   .new-properties-heading {
+
     margin-bottom: 38px;
+
   }
 
 
   .new-properties-heading h2 {
+
     font-size: 39px;
+
   }
 
 
+  /* CARD CONTENT */
+
   .new-property-content {
-    padding: 24px 21px 25px;
+
+    min-height: 245px;
+
+    padding:
+      24px
+      21px
+      25px;
+
+  }
+
+
+  .new-property-info {
+
+    width: 100%;
+
   }
 
 
   .new-property-content h3 {
+
     font-size: 24px;
+
   }
 
 
   .new-property-description {
+
     font-size: 13px;
+
   }
 
 
   .new-property-content button {
-    width: 100%;
+
+    width: auto;
 
     min-height: 48px;
+
+  }
+
+
+  /* =================================
+     MOBILE GLOBE
+  ================================= */
+
+  .property-globe {
+
+    width: 135px;
+    height: 135px;
+
+    right: -18px;
+    bottom: 0;
+
+    opacity: 0.22;
+
+  }
+
+
+  .globe {
+
+    width: 82px;
+    height: 82px;
+
+  }
+
+
+  .globe-line-horizontal {
+
+    height: 31px;
+
+    top: 25px;
+
+  }
+
+
+  .globe-line-vertical-one {
+
+    width: 38px;
+
+    left: 22px;
+
+  }
+
+
+  .globe-line-vertical-two {
+
+    width: 18px;
+
+    left: 32px;
+
+  }
+
+
+  .globe-orbit-one {
+
+    width: 115px;
+    height: 42px;
+
+  }
+
+
+  .globe-orbit-two {
+
+    width: 125px;
+    height: 48px;
+
+  }
+
+
+  /* 360 VIEW BADGE */
+
+  .new-property-status {
+
+    top: 12px;
+
+    left: 12px;
+
+    padding:
+      6px
+      9px;
+
+    font-size: 9px;
+
   }
 
 }
@@ -515,14 +941,51 @@
 @media (max-width: 380px) {
 
   .new-properties-hero {
+
     padding-left: 18px;
+
     padding-right: 18px;
+
   }
 
 
   .new-properties-list {
+
     padding-left: 16px;
+
     padding-right: 16px;
+
+  }
+
+
+  .new-property-status {
+
+    top: 10px;
+
+    left: 10px;
+
+    padding:
+      5px
+      8px;
+
+    font-size: 8px;
+
+  }
+
+
+  .new-property-content {
+
+    min-height: 235px;
+
+  }
+
+
+  .property-globe {
+
+    right: -30px;
+
+    opacity: 0.16;
+
   }
 
 }

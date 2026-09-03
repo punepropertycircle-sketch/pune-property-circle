@@ -1,12 +1,13 @@
 import project1Image from "../assets/projects/project-1.jpg";
+import project2Image from "../assets/projects/project-2.jpg";
 import resellBungalowImage from "../assets/projects/resell-bungalow-1.jpg";
 
 const projects = [
   {
     id: "project-1",
 
-    name: "project 1",
-      sheetName: "Kolate Patil",
+    name: "Kolte Patil The Reserve",
+    sheetName: "Kolate Patil",
 
     category: "new",
 
@@ -69,13 +70,60 @@ const projects = [
       },
     ],
 
-    pricingNote: "* On-possession charges extra.",
+    pricingNote:
+      "* On-possession charges extra.",
 
     has360: true,
 
     tourUrl:
       "https://tours.punepropertycircle.com/tours/Ytbc0wKgZ",
   },
+
+
+  /* =================================
+     PROJECT 2
+     SAAJGIRI NANDED CITY
+  ================================= */
+
+  {
+    id: "project-2",
+
+    name: "Saajgiri Nanded City",
+
+    sheetName: "saajgiri 3 bhk",
+
+    category: "new",
+
+    location: "Nanded City",
+
+    type: "3 BHK",
+
+    status: "New Project",
+
+    image: project2Image,
+
+    shortDescription:
+      "Premium 3 BHK homes in Nanded City.",
+
+    description:
+      "Saajgiri Nanded City offers premium 3 BHK homes in the Nanded City area of Pune.",
+
+    features: [
+      "3 BHK Premium Homes",
+      "Nanded City Location",
+      "360° Virtual Tour",
+    ],
+
+    has360: true,
+
+    tourUrl:
+      "https://tours.punepropertycircle.com/tours/TiVbO0eRn",
+  },
+
+
+  /* =================================
+     RESALE BUNGALOW
+  ================================= */
 
   {
     id: "resell-bungalow-1",

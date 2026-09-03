@@ -5,7 +5,6 @@ import ProjectAccessModal from "../components/ProjectAccessModal";
 
 import "./NewProperties.css";
 
-
 function NewProperties() {
 
   /* =================================
@@ -26,12 +25,10 @@ function NewProperties() {
 
 
   /* =================================
-      VIEW PROJECT
+      OPEN 360 ACCESS FORM
   ================================= */
 
   const handleViewProject = (project) => {
-
-    /* Check CloudPano link */
 
     if (!project?.tourUrl) {
 
@@ -42,11 +39,7 @@ function NewProperties() {
       return;
     }
 
-
-    /* Open Access Form */
-
     setSelectedProject(project);
-
   };
 
 
@@ -62,8 +55,8 @@ function NewProperties() {
 
 
   /* =================================
-      AFTER OTP / FORM SUBMIT
-      OPEN CLOUDPANO
+      AFTER FORM SUBMIT
+      OPEN 360 TOUR
   ================================= */
 
   const handleContinue = () => {
@@ -71,12 +64,6 @@ function NewProperties() {
     if (!selectedProject?.tourUrl) {
       return;
     }
-
-
-    /*
-      Directly open CloudPano.
-      Project Details page will NOT open.
-    */
 
     window.location.href =
       selectedProject.tourUrl;
@@ -101,12 +88,10 @@ function NewProperties() {
             NEW PROPERTY
           </p>
 
-
           <h1>
             Discover New
             <span> Properties.</span>
           </h1>
-
 
           <p>
             Explore newly launched and upcoming
@@ -116,7 +101,6 @@ function NewProperties() {
         </div>
 
       </section>
-
 
 
       {/* =================================
@@ -131,14 +115,12 @@ function NewProperties() {
             OUR NEW PROPERTIES
           </p>
 
-
           <h2>
             Find your
             <span> new home.</span>
           </h2>
 
         </div>
-
 
 
         {/* =================================
@@ -167,12 +149,21 @@ function NewProperties() {
                 />
 
 
-                <span className="new-property-status">
-                  {project.status}
-                </span>
+                {/* =================================
+                    360 VIEW BADGE
+                ================================= */}
+
+                <button
+                  type="button"
+                  className="new-property-status new-property-360"
+                  onClick={() =>
+                    handleViewProject(project)
+                  }
+                >
+                  360 VIEW
+                </button>
 
               </div>
-
 
 
               {/* =================================
@@ -181,52 +172,90 @@ function NewProperties() {
 
               <div className="new-property-content">
 
-                <p className="new-property-type">
-                  {project.type}
-                </p>
+
+                {/* =================================
+                    LEFT INFORMATION
+                ================================= */}
+
+                <div className="new-property-info">
+
+                  <p className="new-property-type">
+                    {project.type}
+                  </p>
 
 
-                <h3>
-                  {project.name}
-                </h3>
+                  <h3>
+                    {project.name}
+                  </h3>
 
 
-                <p className="new-property-location">
-                  📍 {project.location}
-                </p>
+                  <p className="new-property-location">
+                    📍 {project.location}
+                  </p>
 
 
-                <p className="new-property-description">
-                  {project.shortDescription}
-                </p>
+                  <p className="new-property-description">
+                    {project.shortDescription}
+                  </p>
 
+
+                  {/* =================================
+                      EXPLORE 360 VIEW
+                  ================================= */}
+
+                  <button
+                    type="button"
+                    onClick={() =>
+                      handleViewProject(project)
+                    }
+                  >
+
+                    Explore 360 View
+
+                    <span>
+                      →
+                    </span>
+
+                  </button>
+
+                </div>
 
 
                 {/* =================================
-                    VIEW PROJECT
+                    ROTATING GLOBE
                 ================================= */}
 
-                <button
-                  type="button"
-                  onClick={() =>
-                    handleViewProject(project)
-                  }
-                >
+                <div className="property-globe">
 
-                  View Project
+                  <div className="globe">
 
-                  <span>
-                    →
-                  </span>
+                    <div className="globe-line globe-line-horizontal"></div>
 
-                </button>
+                    <div className="globe-line globe-line-vertical-one"></div>
+
+                    <div className="globe-line globe-line-vertical-two"></div>
+
+                  </div>
+
+
+                  {/* ORBIT RINGS */}
+
+                  <div className="globe-orbit globe-orbit-one"></div>
+
+                  <div className="globe-orbit globe-orbit-two"></div>
+
+
+                  {/* GLOW */}
+
+                  <div className="globe-glow"></div>
+
+                </div>
 
               </div>
 
             </article>
 
           ))}
-
 
 
           {/* =================================
@@ -240,7 +269,6 @@ function NewProperties() {
               <h3>
                 New properties coming soon.
               </h3>
-
 
               <p>
                 We are currently adding new
@@ -256,7 +284,6 @@ function NewProperties() {
       </section>
 
 
-
       {/* =================================
           ACCESS FORM MODAL
       ================================= */}
@@ -264,13 +291,9 @@ function NewProperties() {
       {selectedProject && (
 
         <ProjectAccessModal
-
           project={selectedProject}
-
           onClose={handleCloseModal}
-
           onContinue={handleContinue}
-
         />
 
       )}
@@ -278,8 +301,6 @@ function NewProperties() {
     </main>
 
   );
-
 }
-
 
 export default NewProperties;

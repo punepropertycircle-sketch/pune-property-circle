@@ -1,15 +1,15 @@
-
-
 import "./FloatingWhatsApp.css";
 
 function FloatingWhatsApp() {
-  const whatsappNumber = "919876543210"; // तुझा actual number टाक
+  const whatsappNumber = "8380800500"; // इथे तुझा actual WhatsApp number टाक
+
+  const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
+    "Hello Pune Property Circle, I am interested in your property."
+  )}`;
 
   return (
     <a
-      href={`https://wa.me/${whatsappNumber}`}
-      target="_blank"
-      rel="noopener noreferrer"
+      href={whatsappUrl}
       className="floating-whatsapp"
       aria-label="Chat with us on WhatsApp"
     >
