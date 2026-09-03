@@ -72,27 +72,19 @@
   display: inline-flex;
   align-items: center;
   gap: 9px;
-
   flex-shrink: 0;
-
   color: #10263a;
   text-decoration: none;
-
   font-size: 13px;
   font-weight: 600;
-
   white-space: nowrap;
-
-  transition:
-    color 0.25s ease;
+  transition: color 0.25s ease;
 }
 
 .property-view-all span {
   color: #b08a35;
   font-size: 19px;
-
-  transition:
-    transform 0.25s ease;
+  transition: transform 0.25s ease;
 }
 
 .property-view-all:hover {
@@ -100,8 +92,7 @@
 }
 
 .property-view-all:hover span {
-  transform:
-    translateX(5px);
+  transform: translateX(5px);
 }
 
 
@@ -111,10 +102,7 @@
 
 .property-category-grid {
   display: grid;
-
-  grid-template-columns:
-    repeat(4, minmax(0, 1fr));
-
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 20px;
 }
 
@@ -125,74 +113,48 @@
 
 .property-category-card {
   position: relative;
-
   min-height: 390px;
-
   display: flex;
   align-items: flex-end;
-
   overflow: hidden;
-
   padding: 30px;
-
   box-sizing: border-box;
-
   border-radius: 14px;
-
   text-decoration: none;
-
   background-size: cover;
   background-position: center;
-
-  border:
-    1px solid #e4e0d7;
-
-  box-shadow:
-    0 10px 30px
-    rgba(10, 32, 55, 0.06);
-
+  border: 1px solid #e4e0d7;
+  box-shadow: 0 10px 30px rgba(10, 32, 55, 0.06);
   transition:
     transform 0.35s ease,
     box-shadow 0.35s ease;
 }
 
 .property-category-card:hover {
-  transform:
-    translateY(-7px);
-
-  box-shadow:
-    0 24px 50px
-    rgba(10, 32, 55, 0.14);
+  transform: translateY(-7px);
+  box-shadow: 0 24px 50px rgba(10, 32, 55, 0.14);
 }
 
 
 /* =========================================
-   BACKGROUND IMAGES
+   BACKGROUND IMAGE
+   ONLY NEW PROPERTY HAS IMAGE
 ========================================= */
 
 .new-property {
-  background-image:
-    url("/src/assets/hero-image.jpg");
-}
-
-.resale-property {
-  background-image:
-    url("/src/assets/resale-property.jpg");
-}
-
-.rental-property {
-  background-image:
-    url("/src/assets/rental-property.jpg");
+  background-image: url("../assets/hero-image.jpg");
 }
 
 
 /* =========================================
-   PLOTS PROPERTY
+   RESALE / RENTAL / PLOTS
+   NO BACKGROUND IMAGE
 ========================================= */
 
+.resale-property,
+.rental-property,
 .plots-property {
-  background-image:
-    url("/src/assets/plots-property.jpg");
+  background-image: none;
 }
 
 
@@ -202,9 +164,7 @@
 
 .property-category-overlay {
   position: absolute;
-
   inset: 0;
-
   background:
     linear-gradient(
       180deg,
@@ -212,9 +172,7 @@
       rgba(5, 20, 34, 0.42) 48%,
       rgba(5, 20, 34, 0.94) 100%
     );
-
-  transition:
-    background 0.35s ease;
+  transition: background 0.35s ease;
 }
 
 .property-category-card:hover
@@ -235,9 +193,7 @@
 
 .property-category-content {
   position: relative;
-
   z-index: 2;
-
   width: 100%;
 }
 
@@ -249,15 +205,10 @@
 
 .property-category-top {
   width: 100%;
-
   display: flex;
-
   align-items: flex-start;
-
   justify-content: space-between;
-
   margin-bottom: 18px;
-
   box-sizing: border-box;
 }
 
@@ -268,22 +219,13 @@
 
 .property-category-360 {
   display: block;
-
   margin: 0;
-
-  padding:
-    5px 0 0 0;
-
+  padding: 5px 0 0 0;
   color: #d4af5a;
-
   font-size: 9px;
-
   font-weight: 700;
-
   letter-spacing: 1.8px;
-
   text-transform: uppercase;
-
   white-space: nowrap;
 }
 
@@ -294,16 +236,10 @@
 
 .property-category-number {
   margin: 0 0 0 auto;
-
-  color:
-    rgba(255, 255, 255, 0.65);
-
+  color: rgba(255, 255, 255, 0.65);
   font-size: 11px;
-
   font-weight: 700;
-
   letter-spacing: 2px;
-
   text-align: right;
 }
 
@@ -314,16 +250,10 @@
 
 .property-category-label {
   margin: 0 0 10px;
-
-  color:
-    rgba(255, 255, 255, 0.70);
-
+  color: rgba(255, 255, 255, 0.70);
   font-size: 9px;
-
   font-weight: 700;
-
   letter-spacing: 2.2px;
-
   text-transform: uppercase;
 }
 
@@ -334,15 +264,10 @@
 
 .property-category-content h3 {
   margin: 0;
-
   color: #ffffff;
-
   font-size: 27px;
-
   font-weight: 600;
-
   line-height: 1.15;
-
   letter-spacing: -0.8px;
 }
 
@@ -357,15 +282,9 @@
 
 .property-category-description {
   max-width: 280px;
-
-  margin:
-    13px 0 0;
-
-  color:
-    rgba(255, 255, 255, 0.72);
-
+  margin: 13px 0 0;
+  color: rgba(255, 255, 255, 0.72);
   font-size: 12px;
-
   line-height: 1.65;
 }
 
@@ -376,47 +295,32 @@
 
 .property-category-bottom {
   display: flex;
-
   align-items: center;
-
   justify-content: center;
-
   gap: 12px;
-
   margin-top: 45px;
 }
 
 .property-category-bottom p {
   margin: 0;
-
   color: #687582;
-
   font-size: 13px;
 }
 
 .property-category-bottom a {
   display: inline-flex;
-
   align-items: center;
-
   gap: 7px;
-
   color: #10263a;
-
   text-decoration: none;
-
   font-size: 13px;
-
   font-weight: 600;
 }
 
 .property-category-bottom a span {
   color: #b08a35;
-
   font-size: 17px;
-
-  transition:
-    transform 0.25s ease;
+  transition: transform 0.25s ease;
 }
 
 .property-category-bottom a:hover {
@@ -424,8 +328,7 @@
 }
 
 .property-category-bottom a:hover span {
-  transform:
-    translateX(4px);
+  transform: translateX(4px);
 }
 
 
@@ -436,37 +339,27 @@
 @media (max-width: 1050px) {
 
   .property-categories {
-    padding:
-      90px 25px;
+    padding: 90px 25px;
   }
 
-
   .property-category-grid {
-    grid-template-columns:
-      repeat(2, minmax(0, 1fr));
-
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 20px;
   }
 
-
   .property-category-card {
     min-height: 400px;
-
     padding: 30px;
   }
-
 
   .property-category-content h3 {
     font-size: 30px;
   }
 
-
   .property-category-description {
     max-width: 330px;
-
     font-size: 13px;
   }
-
 }
 
 
@@ -477,8 +370,7 @@
 @media (max-width: 650px) {
 
   .property-categories {
-    padding:
-      75px 18px;
+    padding: 75px 18px;
   }
 
 
@@ -486,30 +378,22 @@
 
   .property-categories-header {
     display: block;
-
     margin-bottom: 38px;
   }
 
-
   .property-categories-label {
     margin-bottom: 12px;
-
     font-size: 10px;
-
     letter-spacing: 2.5px;
   }
 
-
   .property-categories-header h2 {
     font-size: 39px;
-
     letter-spacing: -1px;
   }
 
-
   .property-categories-intro {
     margin-top: 17px;
-
     font-size: 14px;
   }
 
@@ -525,7 +409,6 @@
 
   .property-category-grid {
     grid-template-columns: 1fr;
-
     gap: 18px;
   }
 
@@ -534,7 +417,6 @@
 
   .property-category-card {
     min-height: 350px;
-
     padding: 27px;
   }
 
@@ -545,13 +427,10 @@
     margin-bottom: 16px;
   }
 
-
   .property-category-360 {
     font-size: 9px;
-
     letter-spacing: 1.6px;
   }
-
 
   .property-category-number {
     font-size: 11px;
@@ -569,7 +448,6 @@
 
   .property-category-description {
     max-width: 320px;
-
     font-size: 13px;
   }
 
@@ -578,12 +456,9 @@
 
   .property-category-bottom {
     flex-direction: column;
-
     gap: 8px;
-
     margin-top: 32px;
   }
-
 }
 
 
@@ -594,30 +469,23 @@
 @media (max-width: 400px) {
 
   .property-categories {
-    padding:
-      65px 15px;
+    padding: 65px 15px;
   }
-
 
   .property-categories-header h2 {
     font-size: 35px;
   }
 
-
   .property-category-card {
     min-height: 330px;
-
     padding: 23px;
   }
-
 
   .property-category-content h3 {
     font-size: 27px;
   }
 
-
   .property-category-description {
     font-size: 12px;
   }
-
 }
