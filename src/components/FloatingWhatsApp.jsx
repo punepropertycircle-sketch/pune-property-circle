@@ -1,7 +1,7 @@
 import "./FloatingWhatsApp.css";
 
 function FloatingWhatsApp() {
-  const whatsappNumber = "91838080500";
+  const whatsappNumber = "918380800500";
 
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
     "Hello Pune Property Circle, I am interested in your property."
