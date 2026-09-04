@@ -24,6 +24,8 @@ import NewProperties from "./pages/NewProperties";
 import ResellProperties from "./pages/ResellProperties";
 
 import ProjectAccessModal from "./components/ProjectAccessModal";
+import EnquiryModal from "./components/EnquiryModal";
+
 import projects from "./data/projects";
 
 import "./App.css";
@@ -49,17 +51,14 @@ function Home() {
 ================================= */
 
 function ScrollToTop() {
-
   const { pathname } = useLocation();
 
   useEffect(() => {
-
     window.scrollTo({
       top: 0,
       left: 0,
       behavior: "auto",
     });
-
   }, [pathname]);
 
   return null;
@@ -72,25 +71,20 @@ function ScrollToTop() {
 ================================= */
 
 function QRProjectAccess() {
-
   const navigate = useNavigate();
   const { projectId } = useParams();
 
   const [selectedProject, setSelectedProject] =
     useState(null);
 
-
   useEffect(() => {
-
-    const project =
-      projects.find(
-        (item) => item.id === projectId
-      );
+    const project = projects.find(
+      (item) => item.id === projectId
+    );
 
     if (project) {
       setSelectedProject(project);
     }
-
   }, [projectId]);
 
 
@@ -99,9 +93,7 @@ function QRProjectAccess() {
   ================================= */
 
   const handleCloseModal = () => {
-
     navigate("/");
-
   };
 
 
@@ -110,14 +102,12 @@ function QRProjectAccess() {
   ================================= */
 
   const handleContinue = () => {
-
     if (!selectedProject?.tourUrl) {
       return;
     }
 
     window.location.href =
       selectedProject.tourUrl;
-
   };
 
 
@@ -127,13 +117,57 @@ function QRProjectAccess() {
 
 
   return (
-
     <ProjectAccessModal
       project={selectedProject}
       onClose={handleCloseModal}
       onContinue={handleContinue}
     />
+  );
+}
 
+
+/* =================================
+   PROJECT ENQUIRY
+   Works for all projects
+================================= */
+
+function ProjectEnquiry() {
+  const navigate = useNavigate();
+  const { projectId } = useParams();
+
+  const [selectedProject, setSelectedProject] =
+    useState(null);
+
+  useEffect(() => {
+    const project = projects.find(
+      (item) => item.id === projectId
+    );
+
+    if (project) {
+      setSelectedProject(project);
+    }
+  }, [projectId]);
+
+
+  /* =================================
+     CLOSE ENQUIRY FORM
+  ================================= */
+
+  const handleCloseModal = () => {
+    navigate("/");
+  };
+
+
+  if (!selectedProject) {
+    return null;
+  }
+
+
+  return (
+    <EnquiryModal
+      project={selectedProject}
+      onClose={handleCloseModal}
+    />
   );
 }
 
@@ -143,9 +177,7 @@ function QRProjectAccess() {
 ================================= */
 
 function App() {
-
   return (
-
     <BrowserRouter>
 
       {/* =================================
@@ -167,7 +199,6 @@ function App() {
       ================================= */}
 
       <Routes>
-
 
         {/* HOME */}
 
@@ -236,6 +267,17 @@ function App() {
           element={<QRProjectAccess />}
         />
 
+
+        {/* =================================
+            PROJECT ENQUIRY
+            PROJECT 1 + PROJECT 2 + FUTURE
+            PROJECTS
+        ================================= */}
+
+        <Route
+          path="/enquire/:projectId"
+          element={<ProjectEnquiry />}
+        />
 
       </Routes>
 

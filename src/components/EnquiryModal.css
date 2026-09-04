@@ -1,0 +1,732 @@
+/* =========================================================
+   ENQUIRY MODAL OVERLAY
+========================================================= */
+
+.enquiry-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  width: 100%;
+  height: 100%;
+  padding: 25px;
+  background: rgba(0, 0, 0, 0.68);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow-y: auto;
+
+  animation: enquiryOverlayFade 0.25s ease;
+}
+
+
+/* =========================================================
+   OVERLAY ANIMATION
+========================================================= */
+
+@keyframes enquiryOverlayFade {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+
+/* =========================================================
+   MODAL
+========================================================= */
+
+.enquiry-modal {
+  position: relative;
+
+  width: 100%;
+  max-width: 500px;
+
+  max-height: calc(100vh - 50px);
+
+  overflow-y: auto;
+
+  background: #ffffff;
+
+  border-radius: 20px;
+
+  box-shadow:
+    0 30px 90px rgba(0, 0, 0, 0.25);
+
+  animation: enquiryModalSlide 0.3s ease;
+}
+
+
+/* =========================================================
+   MODAL ANIMATION
+========================================================= */
+
+@keyframes enquiryModalSlide {
+  from {
+    opacity: 0;
+
+    transform:
+      translateY(20px)
+      scale(0.97);
+  }
+
+  to {
+    opacity: 1;
+
+    transform:
+      translateY(0)
+      scale(1);
+  }
+}
+
+
+/* =========================================================
+   CLOSE BUTTON
+========================================================= */
+
+.enquiry-close {
+  position: absolute;
+
+  top: 18px;
+  right: 18px;
+
+  z-index: 2;
+
+  width: 38px;
+  height: 38px;
+
+  padding: 0;
+
+  border: none;
+  border-radius: 50%;
+
+  background: #f3f3f3;
+  color: #222222;
+
+  font-size: 25px;
+  line-height: 1;
+
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.enquiry-close:hover {
+  background: #e7e7e7;
+
+  transform:
+    rotate(90deg);
+}
+
+.enquiry-close:active {
+  transform: scale(0.94);
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.enquiry-content {
+  width: 100%;
+
+  padding:
+    48px 42px 38px;
+}
+
+
+/* =========================================================
+   LABEL
+========================================================= */
+
+.enquiry-label {
+  margin:
+    0 0 13px;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  letter-spacing: 2.2px;
+
+  text-transform: uppercase;
+
+  color: #777777;
+}
+
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.enquiry-content h2 {
+  margin: 0;
+
+  padding-right: 35px;
+
+  font-size: 35px;
+
+  line-height: 1.15;
+
+  font-weight: 600;
+
+  letter-spacing: -0.8px;
+
+  color: #151515;
+}
+
+.enquiry-content h2 span {
+  color: #666666;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.enquiry-description {
+  margin:
+    17px 0 30px;
+
+  font-size: 15px;
+
+  line-height: 1.65;
+
+  color: #666666;
+}
+
+
+/* =========================================================
+   FORM
+========================================================= */
+
+.enquiry-form {
+  width: 100%;
+}
+
+
+/* =========================================================
+   FORM GROUP
+========================================================= */
+
+.enquiry-group {
+  width: 100%;
+
+  margin-bottom: 19px;
+}
+
+.enquiry-group label {
+  display: block;
+
+  margin-bottom: 8px;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  color: #333333;
+}
+
+
+/* =========================================================
+   INPUT
+========================================================= */
+
+.enquiry-group input {
+  width: 100%;
+
+  height: 52px;
+
+  padding:
+    0 15px;
+
+  border:
+    1px solid #d9d9d9;
+
+  border-radius: 8px;
+
+  outline: none;
+
+  background: #ffffff;
+
+  color: #171717;
+
+  font-family: inherit;
+
+  font-size: 15px;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
+}
+
+.enquiry-group input::placeholder {
+  color: #a4a4a4;
+}
+
+.enquiry-group input:hover {
+  border-color: #bdbdbd;
+}
+
+.enquiry-group input:focus {
+  border-color: #222222;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 0 0 3px
+    rgba(0, 0, 0, 0.06);
+}
+
+
+/* =========================================================
+   COUNTRY + PHONE
+========================================================= */
+
+.enquiry-phone-row {
+  display: flex;
+
+  width: 100%;
+
+  gap: 8px;
+}
+
+
+/* =========================================================
+   COUNTRY SELECT
+========================================================= */
+
+.enquiry-country-select {
+  width: 180px;
+
+  height: 52px;
+
+  padding:
+    0 10px;
+
+  border:
+    1px solid #d9d9d9;
+
+  border-radius: 8px;
+
+  outline: none;
+
+  background: #ffffff;
+
+  color: #171717;
+
+  font-family: inherit;
+
+  font-size: 14px;
+
+  cursor: pointer;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.enquiry-country-select:hover {
+  border-color: #bdbdbd;
+}
+
+.enquiry-country-select:focus {
+  border-color: #222222;
+
+  box-shadow:
+    0 0 0 3px
+    rgba(0, 0, 0, 0.06);
+}
+
+
+/* =========================================================
+   PHONE INPUT
+========================================================= */
+
+.enquiry-phone-input {
+  flex: 1;
+
+  min-width: 0;
+}
+
+
+/* =========================================================
+   ENQUIRY TYPE
+========================================================= */
+
+.enquiry-type-select {
+  width: 100%;
+
+  height: 52px;
+
+  padding:
+    0 15px;
+
+  border:
+    1px solid #d9d9d9;
+
+  border-radius: 8px;
+
+  outline: none;
+
+  background: #ffffff;
+
+  color: #171717;
+
+  font-family: inherit;
+
+  font-size: 15px;
+
+  cursor: pointer;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.enquiry-type-select:hover {
+  border-color: #bdbdbd;
+}
+
+.enquiry-type-select:focus {
+  border-color: #222222;
+
+  box-shadow:
+    0 0 0 3px
+    rgba(0, 0, 0, 0.06);
+}
+
+
+/* =========================================================
+   MESSAGE
+========================================================= */
+
+.enquiry-message {
+  width: 100%;
+
+  min-height: 105px;
+
+  padding:
+    14px 15px;
+
+  border:
+    1px solid #d9d9d9;
+
+  border-radius: 8px;
+
+  outline: none;
+
+  resize: vertical;
+
+  background: #ffffff;
+
+  color: #171717;
+
+  font-family: inherit;
+
+  font-size: 15px;
+
+  line-height: 1.5;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
+}
+
+.enquiry-message::placeholder {
+  color: #a4a4a4;
+}
+
+.enquiry-message:hover {
+  border-color: #bdbdbd;
+}
+
+.enquiry-message:focus {
+  border-color: #222222;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 0 0 3px
+    rgba(0, 0, 0, 0.06);
+}
+
+
+/* =========================================================
+   SUBMIT BUTTON
+========================================================= */
+
+.enquiry-submit {
+  width: 100%;
+
+  min-height: 54px;
+
+  margin-top: 8px;
+
+  padding:
+    15px 20px;
+
+  border: none;
+
+  border-radius: 8px;
+
+  background: #171717;
+
+  color: #ffffff;
+
+  font-family: inherit;
+
+  font-size: 15px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 12px;
+
+  transition:
+    background 0.25s ease,
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.enquiry-submit:hover {
+  background: #2c2c2c;
+
+  transform:
+    translateY(-2px);
+
+  box-shadow:
+    0 10px 25px
+    rgba(0, 0, 0, 0.15);
+}
+
+.enquiry-submit:active {
+  transform:
+    translateY(0);
+
+  box-shadow: none;
+}
+
+.enquiry-submit:disabled {
+  opacity: 0.7;
+
+  cursor: not-allowed;
+
+  transform: none;
+
+  box-shadow: none;
+}
+
+
+/* =========================================================
+   NOTE
+========================================================= */
+
+.enquiry-note {
+  margin:
+    20px 0 0;
+
+  text-align: center;
+
+  font-size: 11px;
+
+  line-height: 1.5;
+
+  color: #999999;
+}
+
+
+/* =========================================================
+   SUCCESS MESSAGE
+========================================================= */
+
+.enquiry-success {
+  text-align: center;
+
+  padding:
+    20px 0 5px;
+}
+
+.enquiry-success-icon {
+  width: 58px;
+  height: 58px;
+
+  margin:
+    0 auto 20px;
+
+  border-radius: 50%;
+
+  background: #f3f3f3;
+
+  color: #171717;
+
+  font-size: 27px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+}
+
+
+/* =========================================================
+   SCROLLBAR
+========================================================= */
+
+.enquiry-modal::-webkit-scrollbar {
+  width: 5px;
+}
+
+.enquiry-modal::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.enquiry-modal::-webkit-scrollbar-thumb {
+  background: #d0d0d0;
+
+  border-radius: 10px;
+}
+
+
+/* =========================================================
+   TABLET / MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .enquiry-overlay {
+    padding: 18px;
+  }
+
+  .enquiry-modal {
+    max-width: 100%;
+
+    border-radius: 17px;
+
+    max-height:
+      calc(100vh - 36px);
+  }
+
+  .enquiry-content {
+    padding:
+      42px 25px 30px;
+  }
+
+  .enquiry-content h2 {
+    font-size: 30px;
+  }
+
+  .enquiry-description {
+    font-size: 14px;
+
+    margin-bottom: 25px;
+  }
+
+  .enquiry-phone-row {
+    gap: 7px;
+  }
+
+  .enquiry-country-select {
+    width: 145px;
+
+    font-size: 13px;
+
+    padding:
+      0 7px;
+  }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+
+  .enquiry-overlay {
+    padding: 12px;
+  }
+
+  .enquiry-modal {
+    border-radius: 15px;
+
+    max-height:
+      calc(100vh - 24px);
+  }
+
+  .enquiry-content {
+    padding:
+      38px 20px 25px;
+  }
+
+  .enquiry-close {
+    top: 13px;
+    right: 13px;
+
+    width: 34px;
+    height: 34px;
+
+    font-size: 22px;
+  }
+
+  .enquiry-content h2 {
+    font-size: 27px;
+
+    padding-right: 30px;
+  }
+
+  .enquiry-group input {
+    height: 50px;
+
+    font-size: 14px;
+  }
+
+  .enquiry-type-select {
+    height: 50px;
+
+    font-size: 14px;
+  }
+
+  .enquiry-message {
+    min-height: 95px;
+
+    font-size: 14px;
+  }
+
+  .enquiry-submit {
+    min-height: 52px;
+
+    font-size: 14px;
+  }
+
+  .enquiry-country-select {
+    width: 125px;
+
+    font-size: 12px;
+
+    padding:
+      0 5px;
+  }
+}
