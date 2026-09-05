@@ -125,41 +125,7 @@ const projects = [
      RESALE BUNGALOW
   ================================= */
 
-  {
-    id: "resell-bungalow-1",
-
-    name: "Luxury 3-Floor Bungalow",
-
-    category: "resale",
-
-    location: "Pune",
-
-    type: "Luxury Bungalow",
-
-    status: "Resale",
-
-    image: resellBungalowImage,
-
-    shortDescription:
-      "A spacious three-floor luxury bungalow with premium interiors.",
-
-    description:
-      "A premium three-floor resale bungalow with spacious interiors and multiple living spaces.",
-
-    features: [
-      "Three-Floor Bungalow",
-      "Multiple Bedrooms",
-      "Multiple Bathrooms",
-      "Balcony",
-      "Two Terrace Areas",
-      "360° Virtual Tour",
-    ],
-
-    has360: true,
-
-    tourUrl:
-      "https://app.cloudpano.com/tours/8MCmCEySv",
-  },
+ 
 ];
 
 export default projects;
