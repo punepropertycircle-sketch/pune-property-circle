@@ -1,6 +1,7 @@
 import project1Image from "../assets/projects/project-1.jpg";
 import project2Image from "../assets/projects/project-2.jpg";
 import resellBungalowImage from "../assets/projects/resell-bungalow-1.jpg";
+import project3Image from "../assets/projects/kalpataru-blossom.jpg";
 
 const projects = [
   {
@@ -119,13 +120,114 @@ const projects = [
     tourUrl:
       "https://tours.punepropertycircle.com/tours/TiVbO0eRn",
   },
+  {
+    id: "project-3",
+    name: "Kalpataru Blossom",
+    sheetName: "Kalpataru Blossom",
+    category: "new",
+    location: "Sinhagad Road, Pune",
+    type: "2, 3, 4 & 4.5 BHK Luxury Homes",
+    status: "New Project",
 
+    image: project3Image,
+
+    shortDescription:
+      "Premium 2, 3, 4 & 4.5 BHK luxury homes on Sinhagad Road, Pune.",
+
+    description:
+      "Kalpataru Blossom is a premium residential project spread across 16 acres, featuring 3 premium towers in Phase 1. The project offers 2, 3, 4 and 4.5 BHK luxury homes with possession planned from March 2028.",
+
+    features: [
+      "16 Acres Total Land Parcel",
+      "3.5 Acres Phase 1",
+      "3 Premium Towers",
+      "2, 3, 4 & 4.5 BHK Luxury Homes",
+      "4 Apartments per Floor",
+      "3 High-Speed Lifts per Tower",
+      "Builder Possession – March 2028",
+      "RERA Possession – March 2029"
+    ],
+
+    pricing: [
+      {
+        type: "2 BHK",
+        carpetSize: "885 sq.ft.",
+        launchPrice: "₹1.62 Cr"
+      },
+      {
+        type: "2 BHK",
+        carpetSize: "900 sq.ft.",
+        launchPrice: "₹1.64 Cr"
+      },
+      {
+        type: "2 BHK",
+        carpetSize: "940 sq.ft.",
+        launchPrice: "₹1.75 Cr"
+      },
+      {
+        type: "3 BHK",
+        carpetSize: "1100 sq.ft.",
+        launchPrice: "₹2.15 Cr"
+      },
+      {
+        type: "3 BHK",
+        carpetSize: "1122 sq.ft.",
+        launchPrice: "₹2.16 Cr"
+      },
+      {
+        type: "3 BHK",
+        carpetSize: "1266 sq.ft.",
+        launchPrice: "₹2.40 Cr"
+      },
+      {
+        type: "3 BHK",
+        carpetSize: "1422 sq.ft.",
+        launchPrice: "₹2.75 Cr"
+      },
+      {
+        type: "3 BHK",
+        carpetSize: "1530 sq.ft.",
+        launchPrice: "₹2.90 Cr"
+      },
+      {
+        type: "4 BHK",
+        carpetSize: "1965 sq.ft.",
+        launchPrice: "₹4.10 Cr"
+      },
+      {
+        type: "4.5 BHK",
+        carpetSize: "2400 sq.ft.",
+        launchPrice: "₹5.20 Cr"
+      },
+      {
+        type: "4.5 BHK",
+        carpetSize: "2637 sq.ft.",
+        launchPrice: "₹5.40 Cr"
+      },
+      {
+        type: "Commercial Showroom",
+        carpetSize: "1800 sq.ft. carpet",
+        launchPrice: "₹12.50 Cr All Inclusive"
+      }
+    ],
+
+    pricingNote:
+      "Commercial showroom: 40 ft frontage, main road facing.",
+
+    possession:
+      "Builder Possession – March 2028 | RERA Possession – March 2029",
+
+    has360: true,
+
+    tourUrl:
+      "https://tours.punepropertycircle.com/tours/AghgSTrHh",
+  }
 
   /* =================================
      RESALE BUNGALOW
   ================================= */
 
- 
+
 ];
 
 export default projects;
