@@ -2,6 +2,7 @@ import project1Image from "../assets/projects/project-1.jpg";
 import project2Image from "../assets/projects/project-2.jpg";
 import resellBungalowImage from "../assets/projects/resell-bungalow-1.jpg";
 import project3Image from "../assets/projects/kalpataru-blossom.jpg";
+import rentalProjectImage from "../assets/projects/rental-project-1.jpg";
 
 const projects = [
   {
@@ -221,7 +222,43 @@ const projects = [
 
     tourUrl:
       "https://tours.punepropertycircle.com/tours/AghgSTrHh",
-  }
+  },
+{
+  id: "rental-project-1",
+  name: "Majestic Swapnagan",
+  category: "rental",
+  location: "Pune",
+  type: "2 BHK",
+  status: "For Rent",
+  image: rentalProjectImage,
+
+  shortDescription:
+    "Unfurnished 2 BHK apartment for rent in Pune.",
+
+  description:
+    "Unfurnished 2 BHK apartment available for rent in Pune.",
+
+  features: [
+    "2 BHK",
+    "Unfurnished",
+    "Rent – ₹26,000/month",
+    "Deposit – ₹60,000"
+  ],
+
+  pricing: [
+    {
+      type: "2 BHK",
+      launchPrice: "₹26,000/month",
+      deposit: "₹60,000"
+    }
+  ],
+
+ has360: true,
+
+tourUrl:
+  "https://tours.punepropertycircle.com/tours/3qz9uRvUZ",
+}
+
 
   /* =================================
      RESALE BUNGALOW

@@ -19,9 +19,11 @@ import About from "./pages/About";
 import Projects from "./pages/Projects";
 import ProjectDetails from "./pages/ProjectDetails";
 import Contact from "./pages/Contact";
-import FloatingWhatsApp from "./components/FloatingWhatsApp";
 import NewProperties from "./pages/NewProperties";
 import ResellProperties from "./pages/ResellProperties";
+import RentalProperties from "./pages/RentalProperties";
+
+import FloatingWhatsApp from "./components/FloatingWhatsApp";
 
 import ProjectAccessModal from "./components/ProjectAccessModal";
 import EnquiryModal from "./components/EnquiryModal";
@@ -256,10 +258,18 @@ function App() {
         />
 
 
+        {/* RENTAL PROPERTIES */}
+
+        <Route
+          path="/projects/rental"
+          element={<RentalProperties />}
+        />
+
+
         {/* =================================
             360 PROJECT ACCESS
-            PROJECT 1 + PROJECT 2 + FUTURE
-            PROJECTS
+            PROJECT 1 + PROJECT 2 + PROJECT 3
+            + FUTURE PROJECTS
         ================================= */}
 
         <Route
@@ -270,8 +280,8 @@ function App() {
 
         {/* =================================
             PROJECT ENQUIRY
-            PROJECT 1 + PROJECT 2 + FUTURE
-            PROJECTS
+            PROJECT 1 + PROJECT 2 + PROJECT 3
+            + FUTURE PROJECTS
         ================================= */}
 
         <Route
