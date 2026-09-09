@@ -3,10 +3,13 @@ import { useState } from "react";
 import projects from "../data/projects";
 import ProjectAccessModal from "../components/ProjectAccessModal";
 
-import "./ResellProperties.css";
-
+import "./NewProperties.css";
 
 function ResellProperties() {
+
+  /* =================================
+      ACCESS MODAL STATE
+  ================================= */
 
   const [selectedProject, setSelectedProject] =
     useState(null);
@@ -22,23 +25,21 @@ function ResellProperties() {
 
 
   /* =================================
-      VIEW PROJECT
+      OPEN 360 ACCESS FORM
   ================================= */
 
   const handleViewProject = (project) => {
 
-    if (!project.tourUrl) {
+    if (!project?.tourUrl) {
 
       alert(
         "360° virtual tour is not available for this property."
       );
 
       return;
-
     }
 
     setSelectedProject(project);
-
   };
 
 
@@ -54,7 +55,8 @@ function ResellProperties() {
 
 
   /* =================================
-      CONTINUE TO CLOUDPANO
+      AFTER FORM SUBMIT
+      OPEN 360 TOUR
   ================================= */
 
   const handleContinue = () => {
@@ -62,11 +64,6 @@ function ResellProperties() {
     if (!selectedProject?.tourUrl) {
       return;
     }
-
-    /*
-      Directly open CloudPano
-      in the complete browser page.
-    */
 
     window.location.href =
       selectedProject.tourUrl;
@@ -76,27 +73,25 @@ function ResellProperties() {
 
   return (
 
-    <main className="resell-properties-page">
+    <main className="new-properties-page">
 
 
       {/* =================================
           HERO
       ================================= */}
 
-      <section className="resell-properties-hero">
+      <section className="new-properties-hero">
 
-        <div className="resell-properties-hero-content">
+        <div className="new-properties-hero-content">
 
-          <p className="resell-properties-label">
+          <p className="new-properties-label">
             RESALE PROPERTY
           </p>
-
 
           <h1>
             Discover Resale
             <span> Properties.</span>
           </h1>
-
 
           <p>
             Explore verified resale properties
@@ -108,19 +103,17 @@ function ResellProperties() {
       </section>
 
 
-
       {/* =================================
           PROPERTY LIST
       ================================= */}
 
-      <section className="resell-properties-list">
+      <section className="new-properties-list">
 
-        <div className="resell-properties-heading">
+        <div className="new-properties-heading">
 
-          <p className="resell-properties-label">
+          <p className="new-properties-label">
             OUR RESALE PROPERTIES
           </p>
-
 
           <h2>
             Find your
@@ -130,17 +123,16 @@ function ResellProperties() {
         </div>
 
 
-
         {/* =================================
             PROPERTY GRID
         ================================= */}
 
-        <div className="resell-properties-grid">
+        <div className="new-properties-grid">
 
           {resaleProperties.map((project) => (
 
             <article
-              className="resell-property-card"
+              className="new-property-card"
               key={project.id}
             >
 
@@ -149,7 +141,7 @@ function ResellProperties() {
                   IMAGE
               ================================= */}
 
-              <div className="resell-property-image">
+              <div className="new-property-image">
 
                 <img
                   src={project.image}
@@ -157,59 +149,107 @@ function ResellProperties() {
                 />
 
 
-                <span className="resell-property-status">
-                  {project.status}
-                </span>
+                {/* =================================
+                    360 VIEW BADGE
+                ================================= */}
+
+                <button
+                  type="button"
+                  className="new-property-status new-property-360"
+                  onClick={() =>
+                    handleViewProject(project)
+                  }
+                >
+                  360 VIEW
+                </button>
 
               </div>
-
 
 
               {/* =================================
                   CONTENT
               ================================= */}
 
-              <div className="resell-property-content">
-
-                <p className="resell-property-type">
-                  {project.type}
-                </p>
-
-
-                <h3>
-                  {project.name}
-                </h3>
-
-
-                <p className="resell-property-location">
-                  📍 {project.location}
-                </p>
-
-
-                <p className="resell-property-description">
-                  {project.shortDescription}
-                </p>
-
+              <div className="new-property-content">
 
 
                 {/* =================================
-                    VIEW PROJECT
+                    LEFT INFORMATION
                 ================================= */}
 
-                <button
-                  type="button"
-                  onClick={() =>
-                    handleViewProject(project)
-                  }
-                >
+                <div className="new-property-info">
 
-                  View Project
+                  <p className="new-property-type">
+                    {project.type}
+                  </p>
 
-                  <span>
-                    →
-                  </span>
 
-                </button>
+                  <h3>
+                    {project.name}
+                  </h3>
+
+
+                  <p className="new-property-location">
+                    📍 {project.location}
+                  </p>
+
+
+                  <p className="new-property-description">
+                    {project.shortDescription}
+                  </p>
+
+
+                  {/* =================================
+                      EXPLORE 360 VIEW
+                  ================================= */}
+
+                  <button
+                    type="button"
+                    onClick={() =>
+                      handleViewProject(project)
+                    }
+                  >
+
+                    Explore 360 View
+
+                    <span>
+                      →
+                    </span>
+
+                  </button>
+
+                </div>
+
+
+                {/* =================================
+                    ROTATING GLOBE
+                ================================= */}
+
+                <div className="property-globe">
+
+                  <div className="globe">
+
+                    <div className="globe-line globe-line-horizontal"></div>
+
+                    <div className="globe-line globe-line-vertical-one"></div>
+
+                    <div className="globe-line globe-line-vertical-two"></div>
+
+                  </div>
+
+
+                  {/* ORBIT RINGS */}
+
+                  <div className="globe-orbit globe-orbit-one"></div>
+
+                  <div className="globe-orbit globe-orbit-two"></div>
+
+
+                  {/* GLOW */}
+
+                  <div className="globe-glow"></div>
+
+                </div>
 
               </div>
 
@@ -218,24 +258,21 @@ function ResellProperties() {
           ))}
 
 
-
           {/* =================================
               NO PROPERTY
           ================================= */}
 
           {resaleProperties.length === 0 && (
 
-            <div className="no-resell-properties">
+            <div className="no-new-properties">
 
               <h3>
                 Resale properties coming soon.
               </h3>
 
-
               <p>
                 We are currently adding verified
-                resale properties. Please check
-                back soon.
+                resale properties. Please check back soon.
               </p>
 
             </div>
@@ -247,21 +284,16 @@ function ResellProperties() {
       </section>
 
 
-
       {/* =================================
-          ACCESS FORM
+          ACCESS FORM MODAL
       ================================= */}
 
       {selectedProject && (
 
         <ProjectAccessModal
-
           project={selectedProject}
-
           onClose={handleCloseModal}
-
           onContinue={handleContinue}
-
         />
 
       )}

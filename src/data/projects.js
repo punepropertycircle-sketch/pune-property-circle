@@ -1,8 +1,10 @@
 import project1Image from "../assets/projects/project-1.jpg";
 import project2Image from "../assets/projects/project-2.jpg";
-import resellBungalowImage from "../assets/projects/resell-bungalow-1.jpg";
+
 import project3Image from "../assets/projects/kalpataru-blossom.jpg";
 import rentalProjectImage from "../assets/projects/rental-project-1.jpg";
+import shubhaKalyanImage from "../assets/projects/shubha-kalyan.jpg";
+
 
 const projects = [
   {
@@ -257,13 +259,62 @@ const projects = [
 
 tourUrl:
   "https://tours.punepropertycircle.com/tours/3qz9uRvUZ",
-}
+},
+
 
 
   /* =================================
      RESALE BUNGALOW
   ================================= */
+{
+  id: "resale-project-1",
 
+  name: "Shubha Kalyan Society",
+
+  sheetName: "Shubha Kalyan Society",
+
+  category: "resale",
+
+  location: "Nanded City, Pune",
+
+  type: "3 BHK Resale",
+
+  status: "Resale Available",
+
+  image: shubhaKalyanImage,
+
+  shortDescription:
+    "Spacious 3 BHK resale flats with 1245 sq.ft. carpet area in Shubha Kalyan Society, Nanded City.",
+
+  description:
+    "Spacious 3 BHK resale flats available in Shubha Kalyan Society, Nanded City. These homes offer a generous 1245 sq.ft. carpet area and are suitable for families looking for a spacious resale property in Nanded City.",
+
+  features: [
+    "3 BHK Resale Flats",
+    "1245 sq.ft. Carpet Area",
+    "3 Resale Flats Available",
+    "Premium Nanded City Location",
+    "Spacious Family Layout",
+    "Brokerage Applicable",
+    "360° Virtual Tour Available"
+  ],
+
+  pricing: [
+    {
+      type: "3 BHK",
+      carpetSize: "1245 sq.ft.",
+      launchPrice: "₹1.50 Cr+"
+    }
+  ],
+
+  pricingNote:
+    "Price and availability are subject to change. Brokerage applicable.",
+
+  has360: true,
+
+  tourUrl:
+    "https://tours.punepropertycircle.com/tours/escJrZNKt"
+},
 
 ];
 
