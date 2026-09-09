@@ -5,6 +5,8 @@ import project3Image from "../assets/projects/kalpataru-blossom.jpg";
 import rentalProjectImage from "../assets/projects/rental-project-1.jpg";
 import shubhaKalyanImage from "../assets/projects/shubha-kalyan.jpg";
 
+import siddhivinayakaGreenOneImage from "../assets/projects/siddhivinayaka-green-one.jpg";
+
 
 const projects = [
   {
@@ -225,6 +227,82 @@ const projects = [
     tourUrl:
       "https://tours.punepropertycircle.com/tours/AghgSTrHh",
   },
+  /* =================================
+   PROJECT 4
+   SIDDHIVINAYAKA GREEN ONE
+================================= */
+
+{
+  id: "project-4",
+
+  name: "Siddhivinayaka Green One",
+
+  category: "new",
+
+  location: "Pune",
+
+  type: "2 BHK",
+
+  status: "New Project",
+
+  image: siddhivinayakaGreenOneImage,
+
+  shortDescription:
+    "Premium 2 BHK homes with carpet areas from 740 to 845 sq.ft.",
+
+  description:
+    "Siddhivinayaka Green One offers 2 BHK homes with multiple carpet area options ranging from 740 sq.ft. to 845 sq.ft. Possession is planned for December 2028.",
+
+  features: [
+    "2 BHK Premium Homes",
+    "Carpet Areas – 740 to 845 sq.ft.",
+    "RERA No. – PR1260002503030",
+    "Possession – December 2028",
+    "Booking Amount – 10% of Agreement Value",
+    "Floor Rise Charges Applicable",
+    "Legal Charges – ₹15,000",
+    "Maintenance – ₹4/sq.ft./month"
+  ],
+
+  pricing: [
+    {
+      type: "2 BHK",
+      carpetSize: "740 sq.ft.",
+      launchPrice: "₹72.90L"
+    },
+    {
+      type: "2 BHK",
+      carpetSize: "756 sq.ft.",
+      launchPrice: "₹74.50L"
+    },
+    {
+      type: "2 BHK",
+      carpetSize: "772 sq.ft.",
+      launchPrice: "₹75.90L"
+    },
+    {
+      type: "2 BHK",
+      carpetSize: "843 sq.ft.",
+      launchPrice: "₹81.90L"
+    },
+    {
+      type: "2 BHK",
+      carpetSize: "845 sq.ft.",
+      launchPrice: "₹81.90L"
+    }
+  ],
+
+  pricingNote:
+    "Prices mentioned are indicative and subject to change without prior notice.",
+
+  possession:
+    "December 2028",
+
+  has360: true,
+
+  tourUrl:
+    "https://tours.punepropertycircle.com/tours/0Gh4w-T8u"
+},
 {
   id: "rental-project-1",
   name: "Majestic Swapnagan",
