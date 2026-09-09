@@ -235,7 +235,7 @@ const projects = [
 {
   id: "project-4",
 
-  name: "Siddhivinayaka Green One",
+  name: "Siddhivinayak Green One",
 
   category: "new",
 
@@ -305,7 +305,7 @@ const projects = [
 },
 {
   id: "rental-project-1",
-  name: "Majestic Swapnagan",
+  name: "Majestic Swapnangan",
   category: "rental",
   location: "Pune",
   type: "2 BHK",
