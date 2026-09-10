@@ -6,7 +6,7 @@ import rentalProjectImage from "../assets/projects/rental-project-1.jpg";
 import shubhaKalyanImage from "../assets/projects/shubha-kalyan.jpg";
 
 import siddhivinayakaGreenOneImage from "../assets/projects/siddhivinayaka-green-one.jpg";
-
+import venkateshSkylifeImage from "../assets/projects/venkatesh-skylife.jpg";
 
 const projects = [
   {
@@ -302,6 +302,68 @@ const projects = [
 
   tourUrl:
     "https://tours.punepropertycircle.com/tours/0Gh4w-T8u"
+},
+{
+  id: "project-5",
+  name: "Venkatesh Skylife",
+  sheetName: "Venkatesh Skylife",
+  category: "new",
+  location: "Near Lokmat Press Office, Vadgaon Bk, Pune",
+  type: "2, 3 & 4 BHK Spacious Flats",
+  status: "New Project",
+  image: venkateshSkylifeImage,
+
+  shortDescription:
+    "Spacious 2, 3 & 4 BHK flats with premium amenities and endless views of Khadakwasala & Sinhgad Fort.",
+
+  description:
+    "Venkatesh Skylife is a community of 112 flats spread across 1.35 acres in a serene location near Lokmat Press Office, Vadgaon Bk. The project offers spacious 2, 3 & 4 BHK flats with 30,000 sq.ft. of amenities, 5 levels of car parking and modern lifestyle amenities.",
+
+  features: [
+    "Community of 112 Flats",
+    "1.35 Acres of Serene Location",
+    "30,000 Sq.ft. Amenities",
+    "Luxurious Internal Specifications",
+    "2, 3 & 4 BHK Spacious Flats",
+    "Endless Views of Khadakwasala & Sinhgad Fort",
+    "5 Levels of Car Parking",
+    "Good Connectivity to School, Hospital & Market",
+    "Community Living",
+    "20+ Modern Amenities",
+    "Possession – Within 28 Months"
+  ],
+
+  pricing: [
+    {
+      type: "2 BHK",
+      carpetSize: "975 sq.ft.",
+      launchPrice: "₹1.48 Cr",
+      parking: "1 Covered Car Park"
+    },
+    {
+      type: "3 BHK",
+      carpetSize: "1220–1364 sq.ft.",
+      launchPrice: "₹1.79–2.02 Cr",
+      parking: "1 Covered Car Park"
+    },
+    {
+      type: "4 BHK",
+      carpetSize: "1633 sq.ft.",
+      launchPrice: "₹2.61 Cr",
+      parking: "2 Covered Car Parks"
+    }
+  ],
+
+  pricingNote:
+    "Price and availability are subject to change.",
+
+  possession:
+    "Within 28 Months",
+
+  has360: true,
+
+  tourUrl:
+    "https://tours.punepropertycircle.com/tours/34g2HqALK"
 },
 {
   id: "rental-project-1",
