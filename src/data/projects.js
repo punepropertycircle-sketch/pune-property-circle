@@ -4,7 +4,7 @@ import project2Image from "../assets/projects/project-2.jpg";
 import project3Image from "../assets/projects/kalpataru-blossom.jpg";
 import rentalProjectImage from "../assets/projects/rental-project-1.jpg";
 import shubhaKalyanImage from "../assets/projects/shubha-kalyan.jpg";
-
+import shimmerNShineImage from "../assets/projects/shimmer-n-shine.jpg";
 import siddhivinayakaGreenOneImage from "../assets/projects/siddhivinayaka-green-one.jpg";
 import venkateshSkylifeImage from "../assets/projects/venkatesh-skylife.jpg";
 import harmonyApartmentsImage from "../assets/projects/harmony-apartments.jpg";
@@ -450,8 +450,80 @@ tourUrl:
 
   /* =================================
      RESALE BUNGALOW
-  ================================= */
+
+     ================================= */
 {
+  id: "resale-project-2",
+  name: "Shimmer N Shine",
+  sheetName: "Shimmer N Shine",
+  category: "resale",
+  location: "Sinhgad Road, Hingane Khurd, Pune 411051",
+  type: "2 BHK Fully Furnished",
+  status: "Resale Available",
+
+  image: shimmerNShineImage,
+
+  shortDescription:
+    "Fully furnished 2 BHK resale flat at Shimmer N Shine, Sinhgad Road, Pune.",
+
+  description:
+    "Fully furnished 2 BHK resale flat in Shimmer N Shine, Sinhgad Road, Hingane Khurd, Pune. The flat is located on the 3rd floor of a 14-floor building and offers 786 + 119 sq.ft. carpet area with 1 covered car parking.",
+
+  features: [
+    "2 BHK Fully Furnished",
+    "Built-up Area – 1156 sq.ft.",
+    "Carpet Area – 786 + 119 sq.ft.",
+    "3rd Floor of 14 Floors",
+    "1 Covered Car Parking",
+    "3 Balconies / Terraces Including Dry Area",
+    "North Facing",
+    "Property Age – 8 Years",
+    "All Amenities",
+    "Flat No. A2-301"
+  ],
+
+  pricing: [
+    {
+      type: "2 BHK Fully Furnished",
+      carpetSize: "786 + 119 sq.ft.",
+      builtupArea: "1156 sq.ft.",
+      launchPrice: "₹1.50 Cr*"
+    }
+  ],
+
+  pricingNote:
+    "Price ₹1.50 Cr*. Price and availability are subject to change.",
+
+  flatDetails: {
+    
+    wing: "A2",
+    floor: "3rd",
+    totalFloors: "14",
+    facing: "North",
+    age: "8 Years",
+    parking: "1 Covered",
+    balconies: "3 Including Dry"
+  },
+
+  roomSizes: [
+    'Living: 14\'6" × 12\'0"',
+    'Dining: 9\'0" × 8\'6"',
+    'Kitchen: 8\'0" × 7\'6"',
+    'Bedroom 1: 11\'8" × 11\'6"',
+    'Bedroom 2: 11\'0" × 14\'0"',
+    'Toilet 1: 8\'0" × 5\'0"',
+    'Toilet 2: 7\'6" × 5\'0"',
+    "Terraces: Attached to the living room and both bedrooms."
+  ],
+
+ has360: true,
+tourUrl:
+  "https://tours.punepropertycircle.com/tours/d270dUSec"
+},
+
+
+
+     {
   id: "resale-project-1",
 
   name: "Shubha Kalyan Society",
