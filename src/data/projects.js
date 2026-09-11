@@ -7,6 +7,7 @@ import shubhaKalyanImage from "../assets/projects/shubha-kalyan.jpg";
 
 import siddhivinayakaGreenOneImage from "../assets/projects/siddhivinayaka-green-one.jpg";
 import venkateshSkylifeImage from "../assets/projects/venkatesh-skylife.jpg";
+import harmonyApartmentsImage from "../assets/projects/harmony-apartments.jpg";
 
 const projects = [
   {
@@ -400,8 +401,52 @@ const projects = [
 tourUrl:
   "https://tours.punepropertycircle.com/tours/3qz9uRvUZ",
 },
+/* =================================
+   PROJECT 4
+   SIDDHIVINAYAKA GREEN ONE
+================================= */
+{
+  id: "project-6",
+  name: "Harmony Apartments",
+  sheetName: "Harmony Apartments",
+  category: "new",
+  location: "Pune",
+  type: "4.5 BHK",
+  status: "New Project",
+  image: harmonyApartmentsImage,
 
+  shortDescription:
+    "Spacious 4.5 BHK apartments with 2,017.07 sq.ft. carpet area.",
 
+  description:
+    "Harmony Apartments offers spacious 4.5 BHK apartments with a carpet area of 2,017.07 sq.ft., living room balcony and master bedroom balcony. The project offers multiple floor options with total flat costs ranging from approximately ₹3.22 Cr to ₹3.27 Cr.",
+
+  features: [
+    "4.5 BHK Spacious Apartments",
+    "2,017.07 sq.ft. Carpet Area",
+    "161.46 sq.ft. Living Room Balcony",
+    "78.79 sq.ft. Master Bedroom Balcony",
+    "3 Four-Wheeler Parking",
+    "3 Two-Wheeler Parking"
+  ],
+
+  pricing: [
+    {
+      type: "4.5 BHK",
+      carpetSize: "2,017.07 sq.ft.",
+      launchPrice: "₹2.85 Cr – ₹2.90 Cr",
+      totalCost: "₹3.22 Cr – ₹3.27 Cr"
+    }
+  ],
+
+  pricingNote:
+    "Costing effective from 28th February 2026 until further notice. Previous costings are not valid.",
+
+  has360: true,
+
+  tourUrl:
+    "https://tours.punepropertycircle.com/tours/b1-IlL7hJ"
+},
 
   /* =================================
      RESALE BUNGALOW
