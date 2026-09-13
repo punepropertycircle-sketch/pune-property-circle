@@ -205,7 +205,7 @@ function RentalProperties() {
                     <strong>
                       Rent:
                     </strong>{" "}
-                    ₹26,000/month
+                    {project.pricing?.[0]?.launchPrice || "N/A"}
                   </p>
 
 
@@ -217,7 +217,7 @@ function RentalProperties() {
                     <strong>
                       Deposit:
                     </strong>{" "}
-                    ₹60,000
+                    {project.pricing?.[0]?.deposit || "N/A"}
                   </p>
 
                 </div>

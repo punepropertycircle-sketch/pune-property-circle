@@ -8,6 +8,7 @@ import shimmerNShineImage from "../assets/projects/shimmer-n-shine.jpg";
 import siddhivinayakaGreenOneImage from "../assets/projects/siddhivinayaka-green-one.jpg";
 import venkateshSkylifeImage from "../assets/projects/venkatesh-skylife.jpg";
 import harmonyApartmentsImage from "../assets/projects/harmony-apartments.jpg";
+import asawariImage from "../assets/projects/asawari.jpg";
 
 const projects = [
   {
@@ -446,6 +447,41 @@ tourUrl:
 
   tourUrl:
     "https://tours.punepropertycircle.com/tours/b1-IlL7hJ"
+},
+{
+  id: "rental-project-2",
+  name: "Asawari",
+  sheetName: "Asawari",
+  category: "rental",
+  location: "Pune",
+  type: "3 BHK",
+  status: "For Rent",
+  image: asawariImage,
+
+  shortDescription:
+    "3 BHK rental property available in Pune.",
+
+  description:
+    "3 BHK rental property available in Pune.",
+
+  features: [
+    "3 BHK",
+    "Rent – ₹28,000/month",
+    "Deposit – ₹80,000"
+  ],
+
+  pricing: [
+    {
+      type: "3 BHK",
+      launchPrice: "₹28,000/month",
+      deposit: "₹80,000"
+    }
+  ],
+
+  has360: true,
+
+  tourUrl:
+    "https://tours.punepropertycircle.com/tours/y89nx6kP1"
 },
 
   /* =================================
