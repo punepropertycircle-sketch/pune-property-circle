@@ -10,6 +10,7 @@ import venkateshSkylifeImage from "../assets/projects/venkatesh-skylife.jpg";
 import harmonyApartmentsImage from "../assets/projects/harmony-apartments.jpg";
 import asawariImage from "../assets/projects/asawari.jpg";
 import spKingstownImage from "../assets/projects/sp-kingstown.jpg";
+import wildernestImage from "../assets/projects/wildernest.jpg";
 
 const projects = [
   {
@@ -485,6 +486,66 @@ tourUrl:
     "https://tours.punepropertycircle.com/tours/y89nx6kP1"
 },
 
+ /* =================================
+     PROJECT 2
+     SAAJGIRI NANDED CITY
+  ================================= */
+
+  {
+  id: "project-8",
+  name: "Wildernest",
+  sheetName: "Wildernest",
+  category: "new",
+  location: "Hadapsar Annexe (Manjiri Stud Farm)",
+  type: "3 & 4 BHK, Villament & Villas",
+  status: "New Launch",
+  image: wildernestImage,
+
+  shortDescription:
+    "Luxury 3 & 4 BHK residences, Villaments and Villas spread across 11 acres at Hadapsar Annexe.",
+
+  description:
+    "Wildernest is a luxury residential development at Hadapsar Annexe (Manjiri Stud Farm), spread across an 11-acre land parcel with 400+ trees, 100+ mango trees, 80% open space and a 30,000 sq.ft. grand club house.",
+
+  features: [
+    "11 Acre Total Land Parcel",
+    "400+ Trees",
+    "100+ Mango Trees",
+    "Low Density Project",
+    "80% Open & 20% Construction",
+    "30,000 Sq.ft. Grand Club House",
+    "Only 350 Families",
+    "Large Size Private Homes",
+    "World-Class Amenities",
+    "Uncity Living Within the City"
+  ],
+
+  pricing: [
+    {
+      type: "3 BHK",
+      carpetSize: "1400–1500 sq.ft.",
+      launchPrice: "₹1.84 Cr onwards"
+    },
+    {
+      type: "4 BHK",
+      carpetSize: "1908 sq.ft.",
+      launchPrice: "₹2.45 Cr onwards"
+    },
+    {
+      type: "Villament & Villas",
+      carpetSize: "4000–5500 sq.ft.",
+      launchPrice: "₹5.5 Cr onwards"
+    }
+  ],
+
+  pricingNote:
+    "Villament and Villas are limited edition. Price and availability are subject to change.",
+
+  has360: true,
+
+  tourUrl:
+    "https://tours.punepropertycircle.com/tours/ZAjGHPUM0"
+},
   /* =================================
      PROJECT 5
      SAAJGIRI NANDED CITY
