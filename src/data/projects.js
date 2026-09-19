@@ -9,6 +9,7 @@ import siddhivinayakaGreenOneImage from "../assets/projects/siddhivinayaka-green
 import venkateshSkylifeImage from "../assets/projects/venkatesh-skylife.jpg";
 import harmonyApartmentsImage from "../assets/projects/harmony-apartments.jpg";
 import asawariImage from "../assets/projects/asawari.jpg";
+import spKingstownImage from "../assets/projects/sp-kingstown.jpg";
 
 const projects = [
   {
@@ -484,6 +485,69 @@ tourUrl:
     "https://tours.punepropertycircle.com/tours/y89nx6kP1"
 },
 
+  /* =================================
+     PROJECT 5
+     SAAJGIRI NANDED CITY
+  ================================= */
+
+{
+  id: "project-7",
+  name: "SP Kingstown",
+  sheetName: "SP Kingstown",
+  category: "new",
+  location: "Pune",
+  type: "3 & 4 BHK Premium Residences",
+  status: "New Launch",
+  image: spKingstownImage,
+
+  shortDescription:
+    "Premium 3 & 4 BHK residences starting from ₹1.42 Cr.",
+
+  description:
+    "SP Kingstown offers premium 3 & 4 BHK residences in one of Pune's promising growth corridors, with spacious configurations and prices starting from ₹1.42 Cr.",
+
+  features: [
+    "Premium 3 & 4 BHK Residences",
+    "Price Starting From ₹1.42 Cr",
+    "1155 sq.ft. 3 BHK",
+    "1275 sq.ft. 3 BHK",
+    "1413 sq.ft. 3 BHK",
+    "1855 sq.ft. 4 BHK",
+    "Prime Location",
+    "High-Growth Corridor"
+  ],
+
+  pricing: [
+    {
+      type: "3 BHK",
+      carpetSize: "1155 sq.ft.",
+      launchPrice: "₹1.42–1.52 Cr"
+    },
+    {
+      type: "3 BHK",
+      carpetSize: "1275 sq.ft.",
+      launchPrice: "₹1.61–1.71 Cr"
+    },
+    {
+      type: "3 BHK",
+      carpetSize: "1413 sq.ft.",
+      launchPrice: "₹1.79–1.89 Cr"
+    },
+    {
+      type: "4 BHK",
+      carpetSize: "1855 sq.ft.",
+      launchPrice: "₹2.43–2.53 Cr"
+    }
+  ],
+
+  pricingNote:
+    "Price and availability are subject to change.",
+
+  has360: true,
+
+  tourUrl:
+    "https://tours.punepropertycircle.com/tours/HdYQWbXUw"
+},
   /* =================================
      RESALE BUNGALOW
 
