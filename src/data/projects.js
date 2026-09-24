@@ -11,7 +11,7 @@ import harmonyApartmentsImage from "../assets/projects/harmony-apartments.jpg";
 import asawariImage from "../assets/projects/asawari.jpg";
 import spKingstownImage from "../assets/projects/sp-kingstown.jpg";
 import wildernestImage from "../assets/projects/wildernest.jpg";
-
+import asawari2BhkImage from "../assets/projects/asawari-2bhk.jpg";
 const projects = [
   {
     id: "project-1",
@@ -681,7 +681,42 @@ tourUrl:
 tourUrl:
   "https://tours.punepropertycircle.com/tours/d270dUSec"
 },
+{
+  id: "rental-project-3",
+  name: "Asawari 2 BHK",
+  sheetName: "Asawari 2 BHK",
+  category: "rental",
+  location: "Pune",
+  type: "2 BHK",
+  status: "For Rent",
+  image: asawari2BhkImage,
 
+  shortDescription:
+    "Unfurnished 2 BHK apartment available for rent in Pune.",
+
+  description:
+    "Unfurnished 2 BHK apartment available for rent in Pune.",
+
+  features: [
+    "2 BHK",
+    "Unfurnished",
+    "Rent – ₹23,000/month",
+    "Deposit – ₹75,000"
+  ],
+
+  pricing: [
+    {
+      type: "2 BHK",
+      launchPrice: "₹23,000/month",
+      deposit: "₹75,000"
+    }
+  ],
+
+  has360: true,
+
+  tourUrl:
+    "https://tours.punepropertycircle.com/tours/DEv9TBssq"
+},
 
 
      {
