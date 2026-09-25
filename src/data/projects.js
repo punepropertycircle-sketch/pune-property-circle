@@ -12,6 +12,7 @@ import asawariImage from "../assets/projects/asawari.jpg";
 import spKingstownImage from "../assets/projects/sp-kingstown.jpg";
 import wildernestImage from "../assets/projects/wildernest.jpg";
 import asawari2BhkImage from "../assets/projects/asawari-2bhk.jpg";
+import shubhkalyanImage from "../assets/projects/shubhkalyan.jpg";
 const projects = [
   {
     id: "project-1",
@@ -608,6 +609,41 @@ tourUrl:
 
   tourUrl:
     "https://tours.punepropertycircle.com/tours/HdYQWbXUw"
+},
+{
+  id: "rental-project-4",
+  name: "Shubhkalyan",
+  sheetName: "Shubhkalyan",
+  category: "rental",
+  location: "Pune",
+  type: "3 BHK",
+  status: "For Rent",
+  image: shubhkalyanImage,
+
+  shortDescription:
+    "3 BHK apartment available for rent in Pune.",
+
+  description:
+    "3 BHK apartment available for rent in Pune.",
+
+  features: [
+    "3 BHK",
+    "Rent – ₹36,000/month",
+    "Deposit – ₹1,00,000"
+  ],
+
+  pricing: [
+    {
+      type: "3 BHK",
+      launchPrice: "₹36,000/month",
+      deposit: "₹1,00,000"
+    }
+  ],
+
+  has360: true,
+
+  tourUrl:
+    "https://tours.punepropertycircle.com/tours/5Ns7weSq9"
 },
   /* =================================
      RESALE BUNGALOW
