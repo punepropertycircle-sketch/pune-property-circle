@@ -13,6 +13,7 @@ import spKingstownImage from "../assets/projects/sp-kingstown.jpg";
 import wildernestImage from "../assets/projects/wildernest.jpg";
 import asawari2BhkImage from "../assets/projects/asawari-2bhk.jpg";
 import shubhkalyanImage from "../assets/projects/shubhkalyan.jpg";
+import abhiruchiParisarImage from "../assets/projects/abhiruchi-parisar.jpg";
 const projects = [
   {
     id: "project-1",
@@ -753,7 +754,39 @@ tourUrl:
   tourUrl:
     "https://tours.punepropertycircle.com/tours/DEv9TBssq"
 },
+{
+  id: "rental-project-5",
+  name: "Abhiruchi Parisar",
+  sheetName: "Abhiruchi Parisar",
+  category: "rental",
+  location: "Abhiruchi Parisar",
+  type: "2 BHK",
+  status: "For Rent",
+  image: abhiruchiParisarImage,
 
+  shortDescription:
+    "2 BHK apartment available for rent in Abhiruchi Parisar.",
+
+  description:
+    "2 BHK apartment available for rent in Abhiruchi Parisar.",
+
+  features: [
+    "2 BHK",
+    "Rent – ₹30,000/month"
+  ],
+
+  pricing: [
+    {
+      type: "2 BHK",
+      launchPrice: "₹30,000/month"
+    }
+  ],
+
+  has360: true,
+
+  tourUrl:
+    "https://tours.punepropertycircle.com/tours/Gu6kx9Bdg"
+},
 
      {
   id: "resale-project-1",
