@@ -869,6 +869,35 @@ tourUrl:
   tourUrl:
     "https://tours.punepropertycircle.com/tours/escJrZNKt"
 },
+{
+  id: "invisible-project-1",
+  name: "Kumar Megana City",
+  sheetName: "Kumar Megana City",
+  category: "invisible",
+  location: "Pune",
+  type: "2 BHK & 3 BHK",
+  status: "New Project",
+
+  shortDescription:
+    "New 2 BHK & 3 BHK property in Pune.",
+
+  description:
+    "Kumar Megana City offers new 2 BHK and 3 BHK residential properties in Pune.",
+
+  features: [
+    "2 BHK",
+    "3 BHK",
+    "New Property",
+    "Pune"
+  ],
+
+  pricing: [],
+
+  has360: true,
+
+  tourUrl:
+    "https://tours.punepropertycircle.com/tours/nTH5JQB-JG"
+},
 
 ];
 

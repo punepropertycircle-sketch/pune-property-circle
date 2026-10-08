@@ -19,9 +19,9 @@ function NewProperties() {
       NEW PROPERTIES
   ================================= */
 
-  const newProperties = projects.filter(
-    (project) => project.category === "new"
-  );
+ const newProperties = projects.filter(
+  (project) => project.category === "new"
+);
 
 
   /* =================================
