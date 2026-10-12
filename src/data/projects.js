@@ -15,6 +15,7 @@ import asawari2BhkImage from "../assets/projects/asawari-2bhk.jpg";
 import shubhkalyanImage from "../assets/projects/shubhkalyan.jpg";
 import abhiruchiParisarImage from "../assets/projects/abhiruchi-parisar.jpg";
 import sunUniverseImage from "../assets/projects/sun-universe.jpg";
+import mangalbhairavImage from "../assets/projects/mangalbhairav.jpg";
 const projects = [
   {
     id: "project-1",
@@ -897,6 +898,42 @@ tourUrl:
 
   tourUrl:
     "https://tours.punepropertycircle.com/tours/nTH5JQB-JG"
+},
+{
+  id: "rental-project-7",
+  name: "Mangalbhairav",
+  sheetName: "Mangalbhairav",
+  category: "rental",
+  location: "Pune",
+  type: "1 BHK",
+  status: "For Rent",
+  image: mangalbhairavImage,
+
+  shortDescription:
+    "Unfurnished 1 BHK apartment available for rent in Pune.",
+
+  description:
+    "Unfurnished 1 BHK apartment available for rent in Pune.",
+
+  features: [
+    "1 BHK",
+    "Unfurnished",
+    "Rent – ₹17,000/month",
+    "Deposit – ₹45,000"
+  ],
+
+  pricing: [
+    {
+      type: "1 BHK",
+      launchPrice: "₹17,000/month",
+      deposit: "₹45,000"
+    }
+  ],
+
+  has360: true,
+
+  tourUrl:
+    "https://tours.punepropertycircle.com/tours/c1kGngb4b"
 },
 
 ];
