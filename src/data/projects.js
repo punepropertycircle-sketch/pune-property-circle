@@ -16,6 +16,7 @@ import shubhkalyanImage from "../assets/projects/shubhkalyan.jpg";
 import abhiruchiParisarImage from "../assets/projects/abhiruchi-parisar.jpg";
 import sunUniverseImage from "../assets/projects/sun-universe.jpg";
 import mangalbhairavImage from "../assets/projects/mangalbhairav.jpg";
+import magnaCityImage from "../assets/projects/magna-city.jpg";
 const projects = [
   {
     id: "project-1",
@@ -934,6 +935,37 @@ tourUrl:
 
   tourUrl:
     "https://tours.punepropertycircle.com/tours/c1kGngb4b"
+},
+{
+  id: "project-9",
+  name: "Magna City",
+  sheetName: "Magna City",
+  category: "new",
+  location: "Pune",
+  type: "2 BHK & 3 BHK",
+  status: "New Project",
+
+  image: magnaCityImage,
+
+  shortDescription:
+    "New 2 BHK and 3 BHK residential properties in Pune.",
+
+  description:
+    "Magna City offers 2 BHK and 3 BHK residential properties in Pune. Contact us to know more about availability and pricing.",
+
+  features: [
+    "2 BHK Residences",
+    "3 BHK Residences",
+    "Location – Pune",
+    "360° Virtual Tour Available"
+  ],
+
+  pricing: [],
+
+  has360: true,
+
+  tourUrl:
+    "https://tours.punepropertycircle.com/tours/y0R2QPU2sa"
 },
 
 ];
