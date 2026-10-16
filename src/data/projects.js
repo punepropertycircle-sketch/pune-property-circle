@@ -17,6 +17,7 @@ import abhiruchiParisarImage from "../assets/projects/abhiruchi-parisar.jpg";
 import sunUniverseImage from "../assets/projects/sun-universe.jpg";
 import mangalbhairavImage from "../assets/projects/mangalbhairav.jpg";
 import magnaCityImage from "../assets/projects/magna-city.jpg";
+import sargamImage from "../assets/projects/sargam.jpg";
 const projects = [
   {
     id: "project-1",
@@ -966,6 +967,40 @@ tourUrl:
 
   tourUrl:
     "https://tours.punepropertycircle.com/tours/y0R2QPU2sa"
+},{
+  id: "rental-project-8",
+  name: "Sargam",
+  sheetName: "Sargam",
+  category: "rental",
+  location: "Pune",
+  type: "2 BHK",
+  status: "For Rent",
+
+  image: sargamImage,
+
+  shortDescription:
+    "Fully furnished 2 BHK apartment available for rent in Pune.",
+
+  description:
+    "Fully furnished 2 BHK apartment available for rent in Pune.",
+
+  features: [
+    "2 BHK",
+    "Fully Furnished"
+  ],
+
+  pricing: [
+    {
+      type: "2 BHK",
+      launchPrice: "Not Provided",
+      deposit: "Not Provided"
+    }
+  ],
+
+  has360: true,
+
+  tourUrl:
+    "https://tours.punepropertycircle.com/tours/oPG5wLBg7"
 },
 
 ];
