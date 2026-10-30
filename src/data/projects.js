@@ -18,6 +18,9 @@ import sunUniverseImage from "../assets/projects/sun-universe.jpg";
 import mangalbhairavImage from "../assets/projects/mangalbhairav.jpg";
 import magnaCityImage from "../assets/projects/magna-city.jpg";
 import sargamImage from "../assets/projects/sargam.jpg";
+import vybeImage from "../assets/projects/vybe.jpeg";
+
+
 const projects = [
   {
     id: "project-1",
@@ -1002,6 +1005,31 @@ tourUrl:
   tourUrl:
     "https://tours.punepropertycircle.com/tours/oPG5wLBg7"
 },
+{
+  id: "project-10",
+  name: "VYBE",
+  sheetName: "VYBE New Project",
+  category: "new",
+  location: "Pune",
+  type: "2 BHK & 3 BHK",
+  status: "New Project",
+  image: vybeImage,
+  shortDescription:
+    "New 2 BHK and 3 BHK residences in Pune.",
+  description:
+    "VYBE offers 2 BHK and 3 BHK residential properties in Pune. Contact us for pricing and availability.",
+  features: [
+    "2 BHK Residences",
+    "3 BHK Residences",
+    "Location – Pune",
+    "360° Virtual Tour Available"
+  ],
+  pricing: [],
+  has360: true,
+  tourUrl:
+    "https://tours.punepropertycircle.com/tours/51sIWGAuh"
+},
+
 
 ];
 
