@@ -19,6 +19,8 @@ import mangalbhairavImage from "../assets/projects/mangalbhairav.jpg";
 import magnaCityImage from "../assets/projects/magna-city.jpg";
 import sargamImage from "../assets/projects/sargam.jpg";
 import vybeImage from "../assets/projects/vybe.jpeg";
+import forestTrail1BhkImage from "../assets/projects/1bhk.jpeg";
+import forestTrail3BhkImage from "../assets/projects/3bhk.jpeg";
 
 
 const projects = [
@@ -1028,6 +1030,53 @@ tourUrl:
   has360: true,
   tourUrl:
     "https://tours.punepropertycircle.com/tours/51sIWGAuh"
+},
+// PROJECT 11 - FOREST TRAIL 1 BHK
+{
+  id: "project-11",
+  name: "Forest Trail 1 BHK",
+  sheetName: "Forest Trail 1 BHK",
+  category: "new",
+  location: "Pune",
+  type: "1 BHK",
+  status: "New Project",
+  image: forestTrail1BhkImage,
+  shortDescription: "1 BHK residential property at Forest Trail.",
+  description:
+    "Forest Trail 1 BHK offers 1 BHK residential homes. Contact us for pricing and availability.",
+  features: [
+    "1 BHK Residences",
+    "Forest Trail",
+    "360° Virtual Tour Available"
+  ],
+  pricing: [],
+  has360: true,
+  tourUrl:
+    "https://tours.punepropertycircle.com/tours/ekmk28Cns"
+},
+
+// PROJECT 12 - FOREST TRAIL 3 BHK
+{
+  id: "project-12",
+  name: "Forest Trail 3 BHK",
+  sheetName: "Forest Trail 3 BHK",
+  category: "new",
+  location: "Pune",
+  type: "3 BHK",
+  status: "New Project",
+  image: forestTrail3BhkImage,
+  shortDescription: "3 BHK residential property at Forest Trail.",
+  description:
+    "Forest Trail 3 BHK offers 3 BHK residential homes. Contact us for pricing and availability.",
+  features: [
+    "3 BHK Residences",
+    "Forest Trail",
+    "360° Virtual Tour Available"
+  ],
+  pricing: [],
+  has360: true,
+  tourUrl:
+    "https://tours.punepropertycircle.com/tours/37imRkDeE"
 },
 
 
