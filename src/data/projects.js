@@ -21,6 +21,7 @@ import sargamImage from "../assets/projects/sargam.jpg";
 import vybeImage from "../assets/projects/vybe.jpeg";
 import forestTrail1BhkImage from "../assets/projects/1bhk.jpeg";
 import forestTrail3BhkImage from "../assets/projects/3bhk.jpeg";
+import yashGangaImage from "../assets/projects/yashganga.jpeg";
 
 
 const projects = [
@@ -1078,6 +1079,29 @@ tourUrl:
   tourUrl:
     "https://tours.punepropertycircle.com/tours/37imRkDeE"
 },
+
+{
+  id: "rental-yash-ganga",
+  name: "Yash Ganga",
+  category: "rental",
+  location: "Dhayari, Pune",
+  type: "1 BHK",
+  status: "Available for Rent",
+  image: yashGangaImage,
+  shortDescription: "1 BHK Flat Available for Rent in Dhayari.",
+  description:
+    "1 BHK flat available for rent at Yash Ganga, Dhayari, Pune.",
+  features: [
+    "1 BHK Flat",
+    "Monthly Rent: ₹12,000",
+    "Security Deposit: ₹36,000",
+    "360° Virtual Tour Available"
+  ],
+  pricing: [],
+  has360: true,
+  tourUrl: "https://tours.punepropertycircle.com/tours/uBbYb4xsI"
+},
+
 
 
 ];
