@@ -22,6 +22,10 @@ import vybeImage from "../assets/projects/vybe.jpeg";
 import forestTrail1BhkImage from "../assets/projects/1bhk.jpeg";
 import forestTrail3BhkImage from "../assets/projects/3bhk.jpeg";
 import yashGangaImage from "../assets/projects/yashganga.jpeg";
+import panchamImage from "../assets/projects/pancham.jpeg";
+import shubhakalyanImage from "../assets/projects/shubhakalyan.jpeg";
+import AsawariImage from "../assets/projects/Asawari.jpeg";
+
 
 
 const projects = [
@@ -1101,6 +1105,53 @@ tourUrl:
   has360: true,
   tourUrl: "https://tours.punepropertycircle.com/tours/uBbYb4xsI"
 },
+
+{
+  id: "resale-pancham",
+  name: "Pancham",
+  category: "resale",
+  location: "",
+  type: "",
+  status: "Resale",
+  image: panchamImage,
+  shortDescription: "Resale property at Pancham.",
+  description: "Explore Pancham property with our 360° virtual tour. Contact us for more details.",
+  features: ["Resale Property", "360° Virtual Tour Available"],
+  pricing: [],
+  has360: true,
+  tourUrl: "https://tours.punepropertycircle.com/tours/yM9q5DUDp"
+},
+{
+  id: "resale-shubhakalyan",
+  name: "Shubhakalyan",
+  category: "resale",
+  location: "",
+  type: "",
+  status: "Resale",
+  image: shubhakalyanImage,
+  shortDescription: "Resale property at Shubhakalyan.",
+  description: "Explore Shubhakalyan property with our 360° virtual tour. Contact us for more details.",
+  features: ["Resale Property", "360° Virtual Tour Available"],
+  pricing: [],
+  has360: true,
+  tourUrl: "https://tours.punepropertycircle.com/tours/uUf_63uhA"
+},
+{
+  id: "resale-asawari",
+  name: "Asawari",
+  category: "resale",
+  location: "",
+  type: "",
+  status: "Resale",
+  image: AsawariImage,
+  shortDescription: "Resale property at Asawari.",
+  description: "Explore Asawari property with our 360° virtual tour. Contact us for more details.",
+  features: ["Resale Property", "360° Virtual Tour Available"],
+  pricing: [],
+  has360: true,
+  tourUrl: "https://tours.punepropertycircle.com/tours/E8WAz5gwK"
+},
+
 
 
 
