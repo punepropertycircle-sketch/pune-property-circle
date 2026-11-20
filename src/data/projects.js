@@ -25,6 +25,11 @@ import yashGangaImage from "../assets/projects/yashganga.jpeg";
 import panchamImage from "../assets/projects/pancham.jpeg";
 import shubhakalyanImage from "../assets/projects/shubhakalyan.jpeg";
 import AsawariImage from "../assets/projects/Asawari.jpeg";
+import mohiteImage from "../assets/projects/mohite.jpeg";
+import bahaarImage from "../assets/projects/bahaar.jpeg";
+import sargamRentalImage from "../assets/projects/sargam-rental.jpeg";
+import mangoNestImage from "../assets/projects/mango-nest.jpeg";
+
 
 
 
@@ -1150,6 +1155,67 @@ tourUrl:
   pricing: [],
   has360: true,
   tourUrl: "https://tours.punepropertycircle.com/tours/E8WAz5gwK"
+},
+
+{
+  id: "rental-mohite",
+  name: "Mohite",
+  category: "rental",
+  location: "",
+  type: "",
+  status: "Available for Rent",
+  image: mohiteImage,
+  shortDescription: "Rental property at Mohite.",
+  description: "Explore Mohite rental property through a 360° virtual tour. Contact us for more details.",
+  features: ["Rental Property", "360° Virtual Tour Available"],
+  pricing: [],
+  has360: true,
+  tourUrl: "https://tours.punepropertycircle.com/tours/FplGzKOD_"
+},
+{
+  id: "rental-bahaar",
+  name: "Bahaar 2 BHK",
+  category: "rental",
+  location: "",
+  type: "2 BHK",
+  status: "Available for Rent",
+  image: bahaarImage,
+  shortDescription: "2 BHK rental property at Bahaar.",
+  description: "Explore Bahaar 2 BHK rental property through a 360° virtual tour. Contact us for more details.",
+  features: ["2 BHK", "Rental Property", "360° Virtual Tour Available"],
+  pricing: [],
+  has360: true,
+  tourUrl: "https://tours.punepropertycircle.com/tours/jKS1a02xv"
+},
+{
+  id: "rental-sargam",
+  name: "Sargam Rental",
+  category: "rental",
+  location: "",
+  type: "",
+  status: "Available for Rent",
+  image: sargamRentalImage,
+  shortDescription: "Rental property at Sargam.",
+  description: "Explore Sargam rental property through a 360° virtual tour. Contact us for more details.",
+  features: ["Rental Property", "360° Virtual Tour Available"],
+  pricing: [],
+  has360: true,
+  tourUrl: "https://tours.punepropertycircle.com/tours/fJ2KcRVYF"
+},
+{
+  id: "rental-mango-nest",
+  name: "Mango Nest",
+  category: "rental",
+  location: "",
+  type: "",
+  status: "Available for Rent",
+  image: mangoNestImage,
+  shortDescription: "Rental property at Mango Nest.",
+  description: "Explore Mango Nest rental property through a 360° virtual tour. Contact us for more details.",
+  features: ["Rental Property", "360° Virtual Tour Available"],
+  pricing: [],
+  has360: true,
+  tourUrl: "https://tours.punepropertycircle.com/tours/SQX4QDc1-"
 },
 
 
