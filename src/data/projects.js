@@ -29,7 +29,7 @@ import mohiteImage from "../assets/projects/mohite.jpeg";
 import bahaarImage from "../assets/projects/bahaar.jpeg";
 import sargamRentalImage from "../assets/projects/sargam-rental.jpeg";
 import mangoNestImage from "../assets/projects/mango-nest.jpeg";
-
+import aaiDadachiPunyaiImage from "../assets/projects/aai-dadachi-punyai.jpeg";
 
 
 
@@ -1217,7 +1217,21 @@ tourUrl:
   has360: true,
   tourUrl: "https://tours.punepropertycircle.com/tours/SQX4QDc1-"
 },
-
+{
+  id: "rental-aai-dadachi-punyai",
+  name: "Aai Dadachi Punyai",
+  category: "rental",
+  location: "",
+  type: "",
+  status: "Available for Rent",
+  image: aaiDadachiPunyaiImage,
+  shortDescription: "Aai Dadachi Punyai rental property.",
+  description: "Explore Aai Dadachi Punyai through a 360° virtual tour.",
+  features: ["Rental Property", "360° Virtual Tour Available"],
+  pricing: [],
+  has360: true,
+  tourUrl: "https://tours.punepropertycircle.com/tours/rO8VPY3nS"
+}
 
 
 
