@@ -1218,16 +1218,16 @@ tourUrl:
   tourUrl: "https://tours.punepropertycircle.com/tours/SQX4QDc1-"
 },
 {
-  id: "rental-aai-dadachi-punyai",
+  id: "rental-1bhk",
   name: "1 BHK Rental",
   category: "rental",
   location: "",
-  type: "",
+  type: "1 BHK",
   status: "Available for Rent",
   image: oneBhkRentalImage,
-  shortDescription: "Aai Dadachi Punyai rental property.",
-  description: "Explore Aai Dadachi Punyai through a 360° virtual tour.",
-  features: ["Rental Property", "360° Virtual Tour Available"],
+  shortDescription: "1 BHK rental property.",
+  description: "Explore this 1 BHK rental property through a 360° virtual tour.",
+  features: ["1 BHK", "Rental Property", "360° Virtual Tour Available"],
   pricing: [],
   has360: true,
   tourUrl: "https://tours.punepropertycircle.com/tours/rO8VPY3nS"
