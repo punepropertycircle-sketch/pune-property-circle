@@ -29,7 +29,7 @@ import mohiteImage from "../assets/projects/mohite.jpeg";
 import bahaarImage from "../assets/projects/bahaar.jpeg";
 import sargamRentalImage from "../assets/projects/sargam-rental.jpeg";
 import mangoNestImage from "../assets/projects/mango-nest.jpeg";
-import aaiDadachiPunyaiImage from "../assets/projects/aai-dadachi-punyai.jpeg";
+import oneBhkRentalImage from "../assets/projects/1bhk-rental.jpeg";
 
 
 
@@ -1219,12 +1219,12 @@ tourUrl:
 },
 {
   id: "rental-aai-dadachi-punyai",
-  name: "Aai Dadachi Punyai",
+  name: "1 BHK Rental",
   category: "rental",
   location: "",
   type: "",
   status: "Available for Rent",
-  image: aaiDadachiPunyaiImage,
+  image: oneBhkRentalImage,
   shortDescription: "Aai Dadachi Punyai rental property.",
   description: "Explore Aai Dadachi Punyai through a 360° virtual tour.",
   features: ["Rental Property", "360° Virtual Tour Available"],
