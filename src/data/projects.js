@@ -30,6 +30,8 @@ import bahaarImage from "../assets/projects/bahaar.jpeg";
 import sargamRentalImage from "../assets/projects/sargam-rental.jpeg";
 import mangoNestImage from "../assets/projects/mango-nest.jpeg";
 import oneBhkRentalImage from "../assets/projects/1bhk-rental.jpeg";
+import mrugavarshaImage from "../assets/projects/mrugavarsha.jpeg";
+import ropyakYogvilleImage from "../assets/projects/ropyak-yogville.jpeg";
 
 
 
@@ -1231,8 +1233,37 @@ tourUrl:
   pricing: [],
   has360: true,
   tourUrl: "https://tours.punepropertycircle.com/tours/rO8VPY3nS"
+},
+{
+  id: "rental-mrugavarsha",
+  name: "Mrugavarsha",
+  category: "rental",
+  location: "",
+  type: "",
+  status: "Available for Rent",
+  image: mrugavarshaImage,
+  shortDescription: "Mrugavarsha rental property.",
+  description: "Explore Mrugavarsha through a 360° virtual tour.",
+  features: ["Rental Property", "360° Virtual Tour Available"],
+  pricing: [],
+  has360: true,
+  tourUrl: "https://tours.punepropertycircle.com/tours/j8p6VS271fo"
+},
+{
+  id: "rental-ropyak-yogville",
+  name: "The Ropyak Yogville",
+  category: "rental",
+  location: "",
+  type: "",
+  status: "Available for Rent",
+  image: ropyakYogvilleImage,
+  shortDescription: "The Ropyak Yogville rental property.",
+  description: "Explore The Ropyak Yogville through a 360° virtual tour.",
+  features: ["Rental Property", "360° Virtual Tour Available"],
+  pricing: [],
+  has360: true,
+  tourUrl: "https://tours.punepropertycircle.com/tours/XWLcfJxixp"
 }
-
 
 
 ];
