@@ -32,6 +32,7 @@ import mangoNestImage from "../assets/projects/mango-nest.jpeg";
 import oneBhkRentalImage from "../assets/projects/1bhk-rental.jpeg";
 import mrugavarshaImage from "../assets/projects/mrugavarsha.jpeg";
 import ropyakYogvilleImage from "../assets/projects/ropyak-yogville.jpeg";
+import bahaarImage1 from "../assets/projects/bahaar copy.jpeg";
 
 
 
@@ -1263,7 +1264,23 @@ tourUrl:
   pricing: [],
   has360: true,
   tourUrl: "https://tours.punepropertycircle.com/tours/XWLcfJxixp"
-}
+},
+
+{
+  id: "rental-bahaar-new",
+  name: "Bahaar",
+  category: "rental",
+  location: "",
+  type: "",
+  status: "Available for Rent",
+  image: bahaarImage1,
+  shortDescription: "Bahaar rental property.",
+  description: "Explore Bahaar through a 360° virtual tour.",
+  features: ["Rental Property", "360° Virtual Tour Available"],
+  pricing: [],
+  has360: true,
+  tourUrl: "https://tours.punepropertycircle.com/tours/EsE7QtgOe"
+},
 
 
 ];
