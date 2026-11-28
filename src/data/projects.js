@@ -1265,21 +1265,32 @@ tourUrl:
   has360: true,
   tourUrl: "https://tours.punepropertycircle.com/tours/XWLcfJxixp"
 },
-
 {
   id: "rental-bahaar-new",
-  name: "Bahaar",
+  name: "Bahaar New Rental",
+  sheetName: "Bahaar New Rental",
   category: "rental",
   location: "",
   type: "",
   status: "Available for Rent",
   image: bahaarImage1,
+
   shortDescription: "Bahaar rental property.",
-  description: "Explore Bahaar through a 360° virtual tour.",
-  features: ["Rental Property", "360° Virtual Tour Available"],
+
+  description:
+    "Explore Bahaar through a 360° virtual tour.",
+
+  features: [
+    "Rental Property",
+    "360° Virtual Tour Available"
+  ],
+
   pricing: [],
+
   has360: true,
-  tourUrl: "https://tours.punepropertycircle.com/tours/EsE7QtgOe"
+
+  tourUrl:
+    "https://tours.punepropertycircle.com/tours/EsE7QtgOe"
 },
 
 
